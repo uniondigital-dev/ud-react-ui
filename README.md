@@ -1,1 +1,1 @@
-# ud-miniapp-components
+# Union Digital's Mini App React Components

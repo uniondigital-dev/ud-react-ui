@@ -6,7 +6,7 @@ const VARIANT = {
 
 const BUTTON_VARIANT = {
   primary:
-    'bg-primary text-white hover:bg-primary disabled:bg-gray-200 disabled:text-gray-400',
+    'bg-primary text-white hover:bg-primary-dark disabled:bg-gray-200 disabled:text-gray-400',
   danger:
     'bg-red-100 text-red-800 hover:bg-red-200 disabled:bg-gray-200 disabled:text-gray-400',
   success:
