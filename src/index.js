@@ -1,2 +1,9 @@
+export { default as Avatar } from './components/Avatar';
 export { default as AvatarList } from './components/AvatarList';
 export { default as Button } from './components/Button';
+export { default as Container } from './components/Container';
+export { default as ContentCard } from './components/ContentCard';
+export { default as ContentCardList } from './components/ContentCardList';
+export { default as LoanCard } from './components/LoanCard';
+export { default as Title } from './components/Title';
+export { default as VSpace } from './components/VSpace';
