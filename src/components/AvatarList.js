@@ -4,13 +4,13 @@ import Avatar from './Avatar';
 
 function AvatarList({ users, label, onClick }) {
   return (
-    <div className="flex space-x-2 items-center" onClick={onClick}>
-      <div className="flex -space-x-2">
+    <div className="ud-flex ud-space-x-2 ud-items-center" onClick={onClick}>
+      <div className="ud-flex ud--space-x-2">
         {users.slice(0, 3).map((user, index) => (
           <Avatar key={index} avatarUrl={user.avatarUrl} hasBorder />
         ))}
       </div>
-      <p className="text-sm">{label}</p>
+      <p className="ud-text-sm">{label}</p>
     </div>
   );
 }

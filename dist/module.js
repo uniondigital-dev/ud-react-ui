@@ -1,32 +1,16 @@
-var $fbsOk$reactjsxruntime = require("react/jsx-runtime");
-require("react");
-var $fbsOk$proptypes = require("prop-types");
-var $fbsOk$classnames = require("classnames");
-
-function $parcel$export(e, n, v, s) {
-  Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
-}
-function $parcel$interopDefault(a) {
-  return a && a.__esModule ? a.default : a;
-}
-
-$parcel$export(module.exports, "Avatar", () => $e00a23217c74ccb9$export$2e2bcd8739ae039);
-$parcel$export(module.exports, "AvatarList", () => $aae2cdbdcba990b9$export$2e2bcd8739ae039);
-$parcel$export(module.exports, "Button", () => $24cf76bc329384dd$export$2e2bcd8739ae039);
-$parcel$export(module.exports, "Container", () => $f32c7848c29308c0$export$2e2bcd8739ae039);
-$parcel$export(module.exports, "ContentCard", () => $6563f807c4cd184b$export$2e2bcd8739ae039);
-$parcel$export(module.exports, "ContentCardList", () => $2cd3fd31530cc318$export$2e2bcd8739ae039);
-$parcel$export(module.exports, "LoanCard", () => $d9b0acdb1f0cb83d$export$2e2bcd8739ae039);
-$parcel$export(module.exports, "Title", () => $184cd3bea746e74f$export$2e2bcd8739ae039);
-$parcel$export(module.exports, "VSpace", () => $73eaeef512cc934c$export$2e2bcd8739ae039);
+import {jsx as $7pxzy$jsx, jsxs as $7pxzy$jsxs} from "react/jsx-runtime";
+import "react";
+import $7pxzy$proptypes from "prop-types";
+import $7pxzy$classnames from "classnames";
 
 
 
 
-function $e00a23217c74ccb9$var$Avatar({ avatarUrl: avatarUrl , hasBorder: hasBorder , ...rest }) {
-    return(/*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("img", {
+
+function $cd9b2ab9f8bfcd29$var$Avatar({ avatarUrl: avatarUrl , hasBorder: hasBorder , ...rest }) {
+    return(/*#__PURE__*/ $7pxzy$jsx("img", {
         ...rest,
-        className: ($parcel$interopDefault($fbsOk$classnames))('ud-h-10 ud-w-10 ud-object-cover ud-rounded-full', {
+        className: $7pxzy$classnames('ud-h-10 ud-w-10 ud-object-cover ud-rounded-full', {
             'ud-border-2 ud-border-white': hasBorder
         }),
         src: avatarUrl,
@@ -39,19 +23,19 @@ function $e00a23217c74ccb9$var$Avatar({ avatarUrl: avatarUrl , hasBorder: hasBor
         __self: this
     }));
 }
-$e00a23217c74ccb9$var$Avatar.propTypes = {
-    avatarUrl: ($parcel$interopDefault($fbsOk$proptypes)).string.isRequired,
-    hasBorder: ($parcel$interopDefault($fbsOk$proptypes)).bool
+$cd9b2ab9f8bfcd29$var$Avatar.propTypes = {
+    avatarUrl: $7pxzy$proptypes.string.isRequired,
+    hasBorder: $7pxzy$proptypes.bool
 };
-var $e00a23217c74ccb9$export$2e2bcd8739ae039 = $e00a23217c74ccb9$var$Avatar;
+var $cd9b2ab9f8bfcd29$export$2e2bcd8739ae039 = $cd9b2ab9f8bfcd29$var$Avatar;
 
 
 
 
 
 
-function $aae2cdbdcba990b9$var$AvatarList({ users: users , label: label , onClick: onClick  }) {
-    return(/*#__PURE__*/ $fbsOk$reactjsxruntime.jsxs("div", {
+function $625231aee116e27a$var$AvatarList({ users: users , label: label , onClick: onClick  }) {
+    return(/*#__PURE__*/ $7pxzy$jsxs("div", {
         className: "ud-flex ud-space-x-2 ud-items-center",
         onClick: onClick,
         __source: {
@@ -61,7 +45,7 @@ function $aae2cdbdcba990b9$var$AvatarList({ users: users , label: label , onClic
         },
         __self: this,
         children: [
-            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("div", {
+            /*#__PURE__*/ $7pxzy$jsx("div", {
                 className: "ud-flex ud--space-x-2",
                 __source: {
                     fileName: "Dev/ud-miniapp-components/src/components/AvatarList.js",
@@ -69,7 +53,7 @@ function $aae2cdbdcba990b9$var$AvatarList({ users: users , label: label , onClic
                     columnNumber: 7
                 },
                 __self: this,
-                children: users.slice(0, 3).map((user, index)=>/*#__PURE__*/ $fbsOk$reactjsxruntime.jsx($e00a23217c74ccb9$export$2e2bcd8739ae039, {
+                children: users.slice(0, 3).map((user, index)=>/*#__PURE__*/ $7pxzy$jsx($cd9b2ab9f8bfcd29$export$2e2bcd8739ae039, {
                         avatarUrl: user.avatarUrl,
                         hasBorder: true,
                         __source: {
@@ -81,7 +65,7 @@ function $aae2cdbdcba990b9$var$AvatarList({ users: users , label: label , onClic
                     }, index)
                 )
             }),
-            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("p", {
+            /*#__PURE__*/ $7pxzy$jsx("p", {
                 className: "ud-text-sm",
                 __source: {
                     fileName: "Dev/ud-miniapp-components/src/components/AvatarList.js",
@@ -94,38 +78,38 @@ function $aae2cdbdcba990b9$var$AvatarList({ users: users , label: label , onClic
         ]
     }));
 }
-$aae2cdbdcba990b9$var$AvatarList.propTypes = {
-    users: ($parcel$interopDefault($fbsOk$proptypes)).array.isRequired,
-    label: ($parcel$interopDefault($fbsOk$proptypes)).string.isRequired,
-    onClick: ($parcel$interopDefault($fbsOk$proptypes)).func
+$625231aee116e27a$var$AvatarList.propTypes = {
+    users: $7pxzy$proptypes.array.isRequired,
+    label: $7pxzy$proptypes.string.isRequired,
+    onClick: $7pxzy$proptypes.func
 };
-var $aae2cdbdcba990b9$export$2e2bcd8739ae039 = $aae2cdbdcba990b9$var$AvatarList;
+var $625231aee116e27a$export$2e2bcd8739ae039 = $625231aee116e27a$var$AvatarList;
 
 
 
 
 
 
-const $24cf76bc329384dd$var$BUTTON_SIZE = {
+const $21d9cf92651b4335$var$BUTTON_SIZE = {
     xs: 'ud-text-xs ud-px-3 ud-py-2 ',
     sm: 'ud-text-sm ud-px-3 ud-py-2',
     base: 'ud-text-sm ud-px-5 ud-py-2.5',
     large: 'ud-text-base ud-font-medium ud-px-5 ud-py-3',
     extraLarge: 'ud-text-base ud-font-medium ud-px-6 ud-py-3.5'
 };
-const $24cf76bc329384dd$var$BUTTON_VARIANT = {
+const $21d9cf92651b4335$var$BUTTON_VARIANT = {
     primary: 'ud-bg-primary ud-text-white hover:ud-bg-primary-dark',
     danger: 'ud-bg-red-100 ud-text-red-800 hover:ud-bg-red-200',
     warning: 'ud-bg-yellow-100 ud-text-yellow-800 hover:ud-bg-yellow-200',
     success: 'ud-bg-green-100 ud-text-green-800 hover:ud-bg-green-200',
     link: 'ud-text-primary ud-underline ud-bg-transparent hover:ud-text-primary-dark !ud-p-0'
 };
-function $24cf76bc329384dd$var$Button({ variant: variant = 'primary' , size: size = 'base' , children: children , className: className , block: block = false , disabled: disabled = false , ...rest }) {
-    return(/*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("button", {
+function $21d9cf92651b4335$var$Button({ variant: variant = 'primary' , size: size = 'base' , children: children , className: className , block: block = false , disabled: disabled = false , ...rest }) {
+    return(/*#__PURE__*/ $7pxzy$jsx("button", {
         ...rest,
         type: "button",
         disabled: disabled,
-        className: ($parcel$interopDefault($fbsOk$classnames))('ud-rounded-md ud-font-sans ud-border-0 ud-cursor-pointer disabled:ud-opacity-75 disabled:ud-cursor-not-allowed', $24cf76bc329384dd$var$BUTTON_VARIANT[variant], $24cf76bc329384dd$var$BUTTON_SIZE[size], className, {
+        className: $7pxzy$classnames('ud-rounded-md ud-font-sans ud-border-0 ud-cursor-pointer disabled:ud-opacity-75 disabled:ud-cursor-not-allowed', $21d9cf92651b4335$var$BUTTON_VARIANT[variant], $21d9cf92651b4335$var$BUTTON_SIZE[size], className, {
             'ud-block ud-w-full': block
         }),
         __source: {
@@ -137,37 +121,37 @@ function $24cf76bc329384dd$var$Button({ variant: variant = 'primary' , size: siz
         children: children
     }));
 }
-$24cf76bc329384dd$var$Button.variant = $24cf76bc329384dd$var$BUTTON_VARIANT;
-$24cf76bc329384dd$var$Button.size = $24cf76bc329384dd$var$BUTTON_SIZE;
-$24cf76bc329384dd$var$Button.propTypes = {
-    variant: ($parcel$interopDefault($fbsOk$proptypes)).oneOf([
+$21d9cf92651b4335$var$Button.variant = $21d9cf92651b4335$var$BUTTON_VARIANT;
+$21d9cf92651b4335$var$Button.size = $21d9cf92651b4335$var$BUTTON_SIZE;
+$21d9cf92651b4335$var$Button.propTypes = {
+    variant: $7pxzy$proptypes.oneOf([
         'primary',
         'danger',
         'warning',
         'success',
         'link'
     ]),
-    size: ($parcel$interopDefault($fbsOk$proptypes)).oneOf([
+    size: $7pxzy$proptypes.oneOf([
         'xs',
         'sm',
         'base',
         'large',
         'extraLarge'
     ]),
-    children: ($parcel$interopDefault($fbsOk$proptypes)).node,
-    className: ($parcel$interopDefault($fbsOk$proptypes)).string,
-    block: ($parcel$interopDefault($fbsOk$proptypes)).bool,
-    disabled: ($parcel$interopDefault($fbsOk$proptypes)).bool
+    children: $7pxzy$proptypes.node,
+    className: $7pxzy$proptypes.string,
+    block: $7pxzy$proptypes.bool,
+    disabled: $7pxzy$proptypes.bool
 };
-var $24cf76bc329384dd$export$2e2bcd8739ae039 = $24cf76bc329384dd$var$Button;
+var $21d9cf92651b4335$export$2e2bcd8739ae039 = $21d9cf92651b4335$var$Button;
 
 
 
 
 
 // TODO: Add option to adjust the min height of container to full screen
-function $f32c7848c29308c0$var$Container({ children: children  }) {
-    return(/*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("div", {
+function $8e29fa5c29f068a1$var$Container({ children: children  }) {
+    return(/*#__PURE__*/ $7pxzy$jsx("div", {
         className: "ud-container ud-px-6 ud-py-6 ud-mx-auto",
         __source: {
             fileName: "Dev/ud-miniapp-components/src/components/Container.js",
@@ -178,18 +162,18 @@ function $f32c7848c29308c0$var$Container({ children: children  }) {
         children: children
     }));
 }
-$f32c7848c29308c0$var$Container.propTypes = {
-    children: ($parcel$interopDefault($fbsOk$proptypes)).node.isRequired
+$8e29fa5c29f068a1$var$Container.propTypes = {
+    children: $7pxzy$proptypes.node.isRequired
 };
-var $f32c7848c29308c0$export$2e2bcd8739ae039 = $f32c7848c29308c0$var$Container;
+var $8e29fa5c29f068a1$export$2e2bcd8739ae039 = $8e29fa5c29f068a1$var$Container;
 
 
 
 
 
 
-function $6563f807c4cd184b$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: coverUrl , title: title , shortDesc: shortDesc , onClick: onClick  }) {
-    return(/*#__PURE__*/ $fbsOk$reactjsxruntime.jsxs("article", {
+function $d58f8462e748373e$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: coverUrl , title: title , shortDesc: shortDesc , onClick: onClick  }) {
+    return(/*#__PURE__*/ $7pxzy$jsxs("article", {
         className: "ud-flex ud-flex-col ud-rounded-lg ud-w-64 ud-bg-white ud-shadow-md ud-group hover:ud-bg-danger ud-cursor-pointer ud-overflow-hidden",
         onClick: onClick,
         __source: {
@@ -199,7 +183,7 @@ function $6563f807c4cd184b$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: co
         },
         __self: this,
         children: [
-            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsxs("div", {
+            /*#__PURE__*/ $7pxzy$jsxs("div", {
                 className: "ud-relative ud-h-40",
                 __source: {
                     fileName: "Dev/ud-miniapp-components/src/components/ContentCard.js",
@@ -208,7 +192,7 @@ function $6563f807c4cd184b$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: co
                 },
                 __self: this,
                 children: [
-                    /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("div", {
+                    /*#__PURE__*/ $7pxzy$jsx("div", {
                         className: "ud-absolute ud-w-64 ud-h-40 ud-bg-slate-400/20",
                         __source: {
                             fileName: "Dev/ud-miniapp-components/src/components/ContentCard.js",
@@ -217,7 +201,7 @@ function $6563f807c4cd184b$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: co
                         },
                         __self: this
                     }),
-                    coverUrl ? /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("img", {
+                    coverUrl ? /*#__PURE__*/ $7pxzy$jsx("img", {
                         className: "ud-w-64 ud-h-40",
                         src: coverUrl,
                         alt: "image cover",
@@ -227,7 +211,7 @@ function $6563f807c4cd184b$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: co
                             columnNumber: 11
                         },
                         __self: this
-                    }) : /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("div", {
+                    }) : /*#__PURE__*/ $7pxzy$jsx("div", {
                         className: "ud-w-64 ud-h-40 ud-bg-primary/20",
                         __source: {
                             fileName: "Dev/ud-miniapp-components/src/components/ContentCard.js",
@@ -236,7 +220,7 @@ function $6563f807c4cd184b$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: co
                         },
                         __self: this
                     }),
-                    /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("div", {
+                    /*#__PURE__*/ $7pxzy$jsx("div", {
                         className: "ud-absolute ud-right-2 ud-top-2",
                         __source: {
                             fileName: "Dev/ud-miniapp-components/src/components/ContentCard.js",
@@ -244,7 +228,7 @@ function $6563f807c4cd184b$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: co
                             columnNumber: 9
                         },
                         __self: this,
-                        children: /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx($e00a23217c74ccb9$export$2e2bcd8739ae039, {
+                        children: /*#__PURE__*/ $7pxzy$jsx($cd9b2ab9f8bfcd29$export$2e2bcd8739ae039, {
                             avatarUrl: avatarUrl,
                             __source: {
                                 fileName: "Dev/ud-miniapp-components/src/components/ContentCard.js",
@@ -256,7 +240,7 @@ function $6563f807c4cd184b$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: co
                     })
                 ]
             }),
-            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsxs("div", {
+            /*#__PURE__*/ $7pxzy$jsxs("div", {
                 className: "ud-flex ud-flex-col ud-space-y-1 ud-px-4 ud-py-3",
                 __source: {
                     fileName: "Dev/ud-miniapp-components/src/components/ContentCard.js",
@@ -265,7 +249,7 @@ function $6563f807c4cd184b$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: co
                 },
                 __self: this,
                 children: [
-                    /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("h2", {
+                    /*#__PURE__*/ $7pxzy$jsx("h2", {
                         className: "ud-text-black ud-font-semibold group-hover:ud-text-primary",
                         __source: {
                             fileName: "Dev/ud-miniapp-components/src/components/ContentCard.js",
@@ -275,7 +259,7 @@ function $6563f807c4cd184b$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: co
                         __self: this,
                         children: title
                     }),
-                    /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("p", {
+                    /*#__PURE__*/ $7pxzy$jsx("p", {
                         className: "ud-text-sm ud-text-black",
                         __source: {
                             fileName: "Dev/ud-miniapp-components/src/components/ContentCard.js",
@@ -290,14 +274,14 @@ function $6563f807c4cd184b$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: co
         ]
     }));
 }
-$6563f807c4cd184b$var$ContentCard.propTypes = {
-    avatarUrl: ($parcel$interopDefault($fbsOk$proptypes)).string.isRequired,
-    coverUrl: ($parcel$interopDefault($fbsOk$proptypes)).string.isRequired,
-    title: ($parcel$interopDefault($fbsOk$proptypes)).string.isRequired,
-    shortDesc: ($parcel$interopDefault($fbsOk$proptypes)).string.isRequired,
-    onClick: ($parcel$interopDefault($fbsOk$proptypes)).func
+$d58f8462e748373e$var$ContentCard.propTypes = {
+    avatarUrl: $7pxzy$proptypes.string.isRequired,
+    coverUrl: $7pxzy$proptypes.string.isRequired,
+    title: $7pxzy$proptypes.string.isRequired,
+    shortDesc: $7pxzy$proptypes.string.isRequired,
+    onClick: $7pxzy$proptypes.func
 };
-var $6563f807c4cd184b$export$2e2bcd8739ae039 = $6563f807c4cd184b$var$ContentCard;
+var $d58f8462e748373e$export$2e2bcd8739ae039 = $d58f8462e748373e$var$ContentCard;
 
 
 
@@ -309,8 +293,8 @@ var $6563f807c4cd184b$export$2e2bcd8739ae039 = $6563f807c4cd184b$var$ContentCard
 
 
 
-function $184cd3bea746e74f$var$Title({ children: children  }) {
-    return(/*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("h1", {
+function $c6cdc2abd7247496$var$Title({ children: children  }) {
+    return(/*#__PURE__*/ $7pxzy$jsx("h1", {
         className: "ud-text-lg ud-font-bold ud-text-black",
         __source: {
             fileName: "Dev/ud-miniapp-components/src/components/Title.js",
@@ -321,18 +305,18 @@ function $184cd3bea746e74f$var$Title({ children: children  }) {
         children: children
     }));
 }
-$184cd3bea746e74f$var$Title.propTypes = {
-    children: ($parcel$interopDefault($fbsOk$proptypes)).oneOfType([
-        ($parcel$interopDefault($fbsOk$proptypes)).string
+$c6cdc2abd7247496$var$Title.propTypes = {
+    children: $7pxzy$proptypes.oneOfType([
+        $7pxzy$proptypes.string
     ]).isRequired
 };
-var $184cd3bea746e74f$export$2e2bcd8739ae039 = $184cd3bea746e74f$var$Title;
+var $c6cdc2abd7247496$export$2e2bcd8739ae039 = $c6cdc2abd7247496$var$Title;
 
 
 
-function $2cd3fd31530cc318$var$ContentCardList({ title: title , items: items , onItemClick: onItemClick , ctaText: ctaText , onCtaClick: onCtaClick , hasPadding: hasPadding ,  }) {
-    return(/*#__PURE__*/ $fbsOk$reactjsxruntime.jsxs("div", {
-        className: ($parcel$interopDefault($fbsOk$classnames))('ud-flex ud-flex-col ud-space-y-2', {
+function $278d26b964537d66$var$ContentCardList({ title: title , items: items , onItemClick: onItemClick , ctaText: ctaText , onCtaClick: onCtaClick , hasPadding: hasPadding ,  }) {
+    return(/*#__PURE__*/ $7pxzy$jsxs("div", {
+        className: $7pxzy$classnames('ud-flex ud-flex-col ud-space-y-2', {
             'ud-container ud-mx-auto ud-pl-6 ': hasPadding
         }),
         __source: {
@@ -342,7 +326,7 @@ function $2cd3fd31530cc318$var$ContentCardList({ title: title , items: items , o
         },
         __self: this,
         children: [
-            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsxs("div", {
+            /*#__PURE__*/ $7pxzy$jsxs("div", {
                 className: "ud-flex ud-items-center ud-justify-between",
                 __source: {
                     fileName: "Dev/ud-miniapp-components/src/components/ContentCardList.js",
@@ -351,7 +335,7 @@ function $2cd3fd31530cc318$var$ContentCardList({ title: title , items: items , o
                 },
                 __self: this,
                 children: [
-                    /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx($184cd3bea746e74f$export$2e2bcd8739ae039, {
+                    /*#__PURE__*/ $7pxzy$jsx($c6cdc2abd7247496$export$2e2bcd8739ae039, {
                         __source: {
                             fileName: "Dev/ud-miniapp-components/src/components/ContentCardList.js",
                             lineNumber: 24,
@@ -360,9 +344,9 @@ function $2cd3fd31530cc318$var$ContentCardList({ title: title , items: items , o
                         __self: this,
                         children: title
                     }),
-                    /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx($24cf76bc329384dd$export$2e2bcd8739ae039, {
+                    /*#__PURE__*/ $7pxzy$jsx($21d9cf92651b4335$export$2e2bcd8739ae039, {
                         variant: "link",
-                        className: ($parcel$interopDefault($fbsOk$classnames))({
+                        className: $7pxzy$classnames({
                             'ud-mr-6': hasPadding
                         }),
                         onClick: onCtaClick,
@@ -376,7 +360,7 @@ function $2cd3fd31530cc318$var$ContentCardList({ title: title , items: items , o
                     })
                 ]
             }),
-            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("div", {
+            /*#__PURE__*/ $7pxzy$jsx("div", {
                 className: "ud-flex ud-space-x-2 ud-overflow-x-scroll",
                 __source: {
                     fileName: "Dev/ud-miniapp-components/src/components/ContentCardList.js",
@@ -384,14 +368,14 @@ function $2cd3fd31530cc318$var$ContentCardList({ title: title , items: items , o
                     columnNumber: 7
                 },
                 __self: this,
-                children: items.map((item, index)=>/*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("div", {
+                children: items.map((item, index)=>/*#__PURE__*/ $7pxzy$jsx("div", {
                         __source: {
                             fileName: "Dev/ud-miniapp-components/src/components/ContentCardList.js",
                             lineNumber: 37,
                             columnNumber: 11
                         },
                         __self: this,
-                        children: /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx($6563f807c4cd184b$export$2e2bcd8739ae039, {
+                        children: /*#__PURE__*/ $7pxzy$jsx($d58f8462e748373e$export$2e2bcd8739ae039, {
                             avatarUrl: item.avatarUrl,
                             coverUrl: item.coverUrl,
                             title: item.title,
@@ -411,15 +395,15 @@ function $2cd3fd31530cc318$var$ContentCardList({ title: title , items: items , o
         ]
     }));
 }
-$2cd3fd31530cc318$var$ContentCardList.propTypes = {
-    title: ($parcel$interopDefault($fbsOk$proptypes)).string,
-    items: ($parcel$interopDefault($fbsOk$proptypes)).array.isRequired,
-    onItemClick: ($parcel$interopDefault($fbsOk$proptypes)).func,
-    ctaText: ($parcel$interopDefault($fbsOk$proptypes)).string,
-    onCtaClick: ($parcel$interopDefault($fbsOk$proptypes)).func,
-    hasPadding: ($parcel$interopDefault($fbsOk$proptypes)).bool
+$278d26b964537d66$var$ContentCardList.propTypes = {
+    title: $7pxzy$proptypes.string,
+    items: $7pxzy$proptypes.array.isRequired,
+    onItemClick: $7pxzy$proptypes.func,
+    ctaText: $7pxzy$proptypes.string,
+    onCtaClick: $7pxzy$proptypes.func,
+    hasPadding: $7pxzy$proptypes.bool
 };
-var $2cd3fd31530cc318$export$2e2bcd8739ae039 = $2cd3fd31530cc318$var$ContentCardList;
+var $278d26b964537d66$export$2e2bcd8739ae039 = $278d26b964537d66$var$ContentCardList;
 
 
 
@@ -427,8 +411,8 @@ var $2cd3fd31530cc318$export$2e2bcd8739ae039 = $2cd3fd31530cc318$var$ContentCard
 
 
 
-function $d9b0acdb1f0cb83d$var$LoanCard({ firstName: firstName , avatarUrl: avatarUrl , amount: amount , paymentDate: paymentDate , onPay: onPay  }) {
-    return(/*#__PURE__*/ $fbsOk$reactjsxruntime.jsxs("div", {
+function $504dc15b912e26af$var$LoanCard({ firstName: firstName , avatarUrl: avatarUrl , amount: amount , paymentDate: paymentDate , onPay: onPay  }) {
+    return(/*#__PURE__*/ $7pxzy$jsxs("div", {
         className: "ud-bg-danger ud-px-4 ud-py-6 ud-rounded-lg ud-shadow-sm",
         __source: {
             fileName: "Dev/ud-miniapp-components/src/components/LoanCard.js",
@@ -437,7 +421,7 @@ function $d9b0acdb1f0cb83d$var$LoanCard({ firstName: firstName , avatarUrl: avat
         },
         __self: this,
         children: [
-            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsxs("div", {
+            /*#__PURE__*/ $7pxzy$jsxs("div", {
                 className: "ud-flex ud-justify-between ud-items-center ud-w-full",
                 __source: {
                     fileName: "Dev/ud-miniapp-components/src/components/LoanCard.js",
@@ -446,7 +430,7 @@ function $d9b0acdb1f0cb83d$var$LoanCard({ firstName: firstName , avatarUrl: avat
                 },
                 __self: this,
                 children: [
-                    /*#__PURE__*/ $fbsOk$reactjsxruntime.jsxs("p", {
+                    /*#__PURE__*/ $7pxzy$jsxs("p", {
                         className: "ud-text-primary ud-text-base ud-capitalize",
                         __source: {
                             fileName: "Dev/ud-miniapp-components/src/components/LoanCard.js",
@@ -459,7 +443,7 @@ function $d9b0acdb1f0cb83d$var$LoanCard({ firstName: firstName , avatarUrl: avat
                             " Personal loan"
                         ]
                     }),
-                    /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx($e00a23217c74ccb9$export$2e2bcd8739ae039, {
+                    /*#__PURE__*/ $7pxzy$jsx($cd9b2ab9f8bfcd29$export$2e2bcd8739ae039, {
                         avatarUrl: avatarUrl,
                         __source: {
                             fileName: "Dev/ud-miniapp-components/src/components/LoanCard.js",
@@ -470,7 +454,7 @@ function $d9b0acdb1f0cb83d$var$LoanCard({ firstName: firstName , avatarUrl: avat
                     })
                 ]
             }),
-            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("h2", {
+            /*#__PURE__*/ $7pxzy$jsx("h2", {
                 className: "ud-mt-3 ud-text-3xl ud-text-black ud-font-semibold",
                 __source: {
                     fileName: "Dev/ud-miniapp-components/src/components/LoanCard.js",
@@ -480,7 +464,7 @@ function $d9b0acdb1f0cb83d$var$LoanCard({ firstName: firstName , avatarUrl: avat
                 __self: this,
                 children: amount
             }),
-            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsxs("div", {
+            /*#__PURE__*/ $7pxzy$jsxs("div", {
                 className: "ud-flex ud-justify-between ud-mt-5",
                 __source: {
                     fileName: "Dev/ud-miniapp-components/src/components/LoanCard.js",
@@ -489,7 +473,7 @@ function $d9b0acdb1f0cb83d$var$LoanCard({ firstName: firstName , avatarUrl: avat
                 },
                 __self: this,
                 children: [
-                    /*#__PURE__*/ $fbsOk$reactjsxruntime.jsxs("div", {
+                    /*#__PURE__*/ $7pxzy$jsxs("div", {
                         __source: {
                             fileName: "Dev/ud-miniapp-components/src/components/LoanCard.js",
                             lineNumber: 20,
@@ -497,7 +481,7 @@ function $d9b0acdb1f0cb83d$var$LoanCard({ firstName: firstName , avatarUrl: avat
                         },
                         __self: this,
                         children: [
-                            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("p", {
+                            /*#__PURE__*/ $7pxzy$jsx("p", {
                                 className: "ud-text-xs ud-text-primary ud-uppercase",
                                 __source: {
                                     fileName: "Dev/ud-miniapp-components/src/components/LoanCard.js",
@@ -507,7 +491,7 @@ function $d9b0acdb1f0cb83d$var$LoanCard({ firstName: firstName , avatarUrl: avat
                                 __self: this,
                                 children: "NEXT SCHEDULED PAYMENT"
                             }),
-                            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("p", {
+                            /*#__PURE__*/ $7pxzy$jsx("p", {
                                 className: "ud-text-base ud-text-black ud-font-bold",
                                 __source: {
                                     fileName: "Dev/ud-miniapp-components/src/components/LoanCard.js",
@@ -519,7 +503,7 @@ function $d9b0acdb1f0cb83d$var$LoanCard({ firstName: firstName , avatarUrl: avat
                             })
                         ]
                     }),
-                    /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx($24cf76bc329384dd$export$2e2bcd8739ae039, {
+                    /*#__PURE__*/ $7pxzy$jsx($21d9cf92651b4335$export$2e2bcd8739ae039, {
                         onClick: onPay,
                         __source: {
                             fileName: "Dev/ud-miniapp-components/src/components/LoanCard.js",
@@ -534,14 +518,14 @@ function $d9b0acdb1f0cb83d$var$LoanCard({ firstName: firstName , avatarUrl: avat
         ]
     }));
 }
-$d9b0acdb1f0cb83d$var$LoanCard.propTypes = {
-    firstName: ($parcel$interopDefault($fbsOk$proptypes)).string.isRequired,
-    avatarUrl: ($parcel$interopDefault($fbsOk$proptypes)).string.isRequired,
-    amount: ($parcel$interopDefault($fbsOk$proptypes)).string.isRequired,
-    paymentDate: ($parcel$interopDefault($fbsOk$proptypes)).string.isRequired,
-    onPay: ($parcel$interopDefault($fbsOk$proptypes)).func
+$504dc15b912e26af$var$LoanCard.propTypes = {
+    firstName: $7pxzy$proptypes.string.isRequired,
+    avatarUrl: $7pxzy$proptypes.string.isRequired,
+    amount: $7pxzy$proptypes.string.isRequired,
+    paymentDate: $7pxzy$proptypes.string.isRequired,
+    onPay: $7pxzy$proptypes.func
 };
-var $d9b0acdb1f0cb83d$export$2e2bcd8739ae039 = $d9b0acdb1f0cb83d$var$LoanCard;
+var $504dc15b912e26af$export$2e2bcd8739ae039 = $504dc15b912e26af$var$LoanCard;
 
 
 
@@ -549,16 +533,16 @@ var $d9b0acdb1f0cb83d$export$2e2bcd8739ae039 = $d9b0acdb1f0cb83d$var$LoanCard;
 
 
 
-const $73eaeef512cc934c$var$SPACE_SIZE = {
+const $1ab94d04ba6b192a$var$SPACE_SIZE = {
     xs: 'ud-mt-1',
     sm: 'ud-mt-2',
     base: 'ud-mt-3',
     large: 'ud-mt-4',
     extraLarge: 'ud-mt-5'
 };
-function $73eaeef512cc934c$var$VSpace({ size: size = 'extraLarge'  }) {
-    return(/*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("div", {
-        className: ($parcel$interopDefault($fbsOk$classnames))($73eaeef512cc934c$var$SPACE_SIZE[size]),
+function $1ab94d04ba6b192a$var$VSpace({ size: size = 'extraLarge'  }) {
+    return(/*#__PURE__*/ $7pxzy$jsx("div", {
+        className: $7pxzy$classnames($1ab94d04ba6b192a$var$SPACE_SIZE[size]),
         __source: {
             fileName: "Dev/ud-miniapp-components/src/components/VSpace.js",
             lineNumber: 14,
@@ -567,8 +551,8 @@ function $73eaeef512cc934c$var$VSpace({ size: size = 'extraLarge'  }) {
         __self: this
     }));
 }
-$73eaeef512cc934c$var$VSpace.propTypes = {
-    size: ($parcel$interopDefault($fbsOk$proptypes)).oneOf([
+$1ab94d04ba6b192a$var$VSpace.propTypes = {
+    size: $7pxzy$proptypes.oneOf([
         'xs',
         'sm',
         'base',
@@ -576,8 +560,9 @@ $73eaeef512cc934c$var$VSpace.propTypes = {
         'extraLarge'
     ])
 };
-var $73eaeef512cc934c$export$2e2bcd8739ae039 = $73eaeef512cc934c$var$VSpace;
+var $1ab94d04ba6b192a$export$2e2bcd8739ae039 = $1ab94d04ba6b192a$var$VSpace;
 
 
 
 
+export {$cd9b2ab9f8bfcd29$export$2e2bcd8739ae039 as Avatar, $625231aee116e27a$export$2e2bcd8739ae039 as AvatarList, $21d9cf92651b4335$export$2e2bcd8739ae039 as Button, $8e29fa5c29f068a1$export$2e2bcd8739ae039 as Container, $d58f8462e748373e$export$2e2bcd8739ae039 as ContentCard, $278d26b964537d66$export$2e2bcd8739ae039 as ContentCardList, $504dc15b912e26af$export$2e2bcd8739ae039 as LoanCard, $c6cdc2abd7247496$export$2e2bcd8739ae039 as Title, $1ab94d04ba6b192a$export$2e2bcd8739ae039 as VSpace};

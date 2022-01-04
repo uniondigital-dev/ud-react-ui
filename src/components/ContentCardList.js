@@ -16,23 +16,23 @@ function ContentCardList({
 }) {
   return (
     <div
-      className={classNames('flex flex-col space-y-2', {
-        'container mx-auto pl-6 ': hasPadding,
+      className={classNames('ud-flex ud-flex-col ud-space-y-2', {
+        'ud-container ud-mx-auto ud-pl-6 ': hasPadding,
       })}
     >
-      <div className="flex items-center justify-between">
+      <div className="ud-flex ud-items-center ud-justify-between">
         <Title>{title}</Title>
         <Button
           variant="link"
           className={classNames({
-            'mr-6': hasPadding,
+            'ud-mr-6': hasPadding,
           })}
           onClick={onCtaClick}
         >
           {ctaText}
         </Button>
       </div>
-      <div className="flex space-x-2 overflow-x-scroll">
+      <div className="ud-flex ud-space-x-2 ud-overflow-x-scroll">
         {items.map((item, index) => (
           <div key={index}>
             <ContentCard

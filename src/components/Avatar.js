@@ -5,8 +5,9 @@ import classNames from 'classnames';
 function Avatar({ avatarUrl, hasBorder, ...rest }) {
   return (
     <img
-      className={classNames('h-10 w-10 object-cover rounded-full ', {
-        'border-2 border-white': hasBorder,
+      {...rest}
+      className={classNames('ud-h-10 ud-w-10 ud-object-cover ud-rounded-full', {
+        'ud-border-2 ud-border-white': hasBorder,
       })}
       src={avatarUrl}
       alt={`avatar`}

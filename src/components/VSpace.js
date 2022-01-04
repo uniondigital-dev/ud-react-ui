@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const SPACE_SIZE = {
-  xs: 'mt-1',
-  sm: 'mt-2',
-  base: 'mt-3',
-  large: 'mt-4',
-  extraLarge: 'mt-5',
+  xs: 'ud-mt-1',
+  sm: 'ud-mt-2',
+  base: 'ud-mt-3',
+  large: 'ud-mt-4',
+  extraLarge: 'ud-mt-5',
 };
 
 function VSpace({ size = 'extraLarge' }) {

@@ -2,22 +2,15 @@
   "name": "ud-react-ui",
   "version": "1.0.0",
   "description": "Union Digital's mini app react components",
-  "source": [
-    "src/index.js",
-    "src/index.css"
-  ],
-  "targets": {
-    "main": {
-      "source": "src/index.js"
-    },
-    "styles": {
-      "source": "src/index.css"
-    }
-  },
+  "source": "src/index.js",
   "main": "dist/main.js",
+  "module": "dist/module.js",
+  "modules": true,
   "scripts": {
-    "watch": "parcel watch --no-hmr --no-source-maps",
-    "build": "parcel build --no-source-maps"
+    "watch:js": "parcel watch --no-hmr --no-source-maps",
+    "watch:css": "npx tailwindcss -i ./src/index.css -o ./dist/style.css --watch",
+    "dev": "concurrently \"npm run watch:css\" \"npm run watch:js\"",
+    "build": "concurrently \"parcel build --no-source-maps\" \"npx tailwindcss -i ./src/index.css -o ./dist/style.css --minify\""
   },
   "keywords": [],
   "author": "",
@@ -34,6 +27,7 @@
   "dependencies": {
     "@parcel/transformer-react-refresh-wrap": "^2.0.1",
     "classnames": "^2.3.1",
+    "concurrently": "^6.5.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

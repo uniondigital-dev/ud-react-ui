@@ -6,25 +6,25 @@ import Avatar from './Avatar';
 function ContentCard({ avatarUrl, coverUrl, title, shortDesc, onClick }) {
   return (
     <article
-      className="flex flex-col rounded-lg w-64 bg-white shadow-md group hover:bg-danger cursor-pointer overflow-hidden"
+      className="ud-flex ud-flex-col ud-rounded-lg ud-w-64 ud-bg-white ud-shadow-md ud-group hover:ud-bg-danger ud-cursor-pointer ud-overflow-hidden"
       onClick={onClick}
     >
-      <div className="relative h-40">
-        <div className="absolute w-64 h-40 bg-slate-400/20"></div>
+      <div className="ud-relative ud-h-40">
+        <div className="ud-absolute ud-w-64 ud-h-40 ud-bg-slate-400/20"></div>
         {coverUrl ? (
-          <img className="w-64 h-40" src={coverUrl} alt="image cover" />
+          <img className="ud-w-64 ud-h-40" src={coverUrl} alt="image cover" />
         ) : (
-          <div className=" w-64 h-40 bg-primary/20"></div>
+          <div className="ud-w-64 ud-h-40 ud-bg-primary/20"></div>
         )}
-        <div className="absolute right-2 top-2">
+        <div className="ud-absolute ud-right-2 ud-top-2">
           <Avatar avatarUrl={avatarUrl} />
         </div>
       </div>
-      <div className="flex flex-col space-y-1 px-4 py-3">
-        <h2 className="text-black font-semibold group-hover:text-primary">
+      <div className="ud-flex ud-flex-col ud-space-y-1 ud-px-4 ud-py-3">
+        <h2 className="ud-text-black ud-font-semibold group-hover:ud-text-primary">
           {title}
         </h2>
-        <p className="text-sm text-black">{shortDesc}</p>
+        <p className="ud-text-sm ud-text-black">{shortDesc}</p>
       </div>
     </article>
   );

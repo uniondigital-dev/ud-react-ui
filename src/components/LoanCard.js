@@ -6,20 +6,24 @@ import Button from './Button';
 
 function LoanCard({ firstName, avatarUrl, amount, paymentDate, onPay }) {
   return (
-    <div className="bg-danger px-4 py-6 rounded-lg shadow-sm">
-      <div className="flex justify-between items-center w-full">
-        <p className="text-primary text-base capitalize">
+    <div className="ud-bg-danger ud-px-4 ud-py-6 ud-rounded-lg ud-shadow-sm">
+      <div className="ud-flex ud-justify-between ud-items-center ud-w-full">
+        <p className="ud-text-primary ud-text-base ud-capitalize">
           {firstName} Personal loan
         </p>
         <Avatar avatarUrl={avatarUrl} />
       </div>
-      <h2 className="mt-3 text-3xl text-black font-semibold">{amount}</h2>
-      <div className="flex justify-between mt-5">
+      <h2 className="ud-mt-3 ud-text-3xl ud-text-black ud-font-semibold">
+        {amount}
+      </h2>
+      <div className="ud-flex ud-justify-between ud-mt-5">
         <div>
-          <p className="text-xs text-primary uppercase">
+          <p className="ud-text-xs ud-text-primary ud-uppercase">
             NEXT SCHEDULED PAYMENT
           </p>
-          <p className="text-base text-black font-bold">{paymentDate}</p>
+          <p className="ud-text-base ud-text-black ud-font-bold">
+            {paymentDate}
+          </p>
         </div>
         <Button onClick={onPay}>Pay</Button>
       </div>
