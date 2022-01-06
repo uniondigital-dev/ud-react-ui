@@ -831,6 +831,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.ud-font-normal{
+  font-weight: 400;
+}
+
 .ud-uppercase{
   text-transform: uppercase;
 }
@@ -1003,14 +1007,4 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ud-group:hover .group-hover\:ud-text-primary{
   --tw-text-opacity: 1;
   color: rgb(116 67 228 / var(--tw-text-opacity));
-}
-
-.ud-dark .dark\:ud-bg-red-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
-.ud-dark .dark\:ud-bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(56 56 56 / var(--tw-bg-opacity));
 }
