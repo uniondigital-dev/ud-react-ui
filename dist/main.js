@@ -1,5 +1,5 @@
 var $fbsOk$reactjsxruntime = require("react/jsx-runtime");
-require("react");
+var $fbsOk$react = require("react");
 var $fbsOk$proptypes = require("prop-types");
 var $fbsOk$classnames = require("classnames");
 
@@ -16,6 +16,7 @@ $parcel$export(module.exports, "Badge", () => $e1218bb755e43134$export$2e2bcd873
 $parcel$export(module.exports, "Button", () => $24cf76bc329384dd$export$2e2bcd8739ae039);
 $parcel$export(module.exports, "Container", () => $f32c7848c29308c0$export$2e2bcd8739ae039);
 $parcel$export(module.exports, "ContentCard", () => $6563f807c4cd184b$export$2e2bcd8739ae039);
+$parcel$export(module.exports, "Input", () => $2480fd5c982ae396$exports.default);
 $parcel$export(module.exports, "ContentCardList", () => $2cd3fd31530cc318$export$2e2bcd8739ae039);
 $parcel$export(module.exports, "LoanCard", () => $d9b0acdb1f0cb83d$export$2e2bcd8739ae039);
 $parcel$export(module.exports, "Title", () => $184cd3bea746e74f$export$2e2bcd8739ae039);
@@ -344,6 +345,78 @@ $6563f807c4cd184b$var$ContentCard.propTypes = {
     onClick: ($parcel$interopDefault($fbsOk$proptypes)).func
 };
 var $6563f807c4cd184b$export$2e2bcd8739ae039 = $6563f807c4cd184b$var$ContentCard;
+
+
+var $2480fd5c982ae396$exports = {};
+
+$parcel$export($2480fd5c982ae396$exports, "default", () => $2480fd5c982ae396$export$2e2bcd8739ae039, (v) => $2480fd5c982ae396$export$2e2bcd8739ae039 = v);
+
+
+
+
+const $34a654368e265f37$export$cf3f0695ece5ed77 = {
+    primary: 'ud-bg-blue-100 ud-text-blue-800',
+    danger: 'ud-bg-red-100 ud-text-red-800',
+    success: 'ud-bg-green-100 ud-text-green-800'
+};
+const $34a654368e265f37$export$314a718b3c247043 = 'focus:ud-outline-none focus:ud-ring-1 focus:ud-ring-offset-0 focus:ud-ring-primary';
+
+
+const $2480fd5c982ae396$var$Input = /*#__PURE__*/ $fbsOk$react.forwardRef(({ label: label , error: error , className: className , ...rest }, ref)=>{
+    return(/*#__PURE__*/ $fbsOk$reactjsxruntime.jsxs("div", {
+        className: "ud-flex ud-flex-col ud-w-full",
+        __source: {
+            fileName: "Dev/ud-miniapp-components/src/components/Input.js",
+            lineNumber: 9,
+            columnNumber: 5
+        },
+        __self: undefined,
+        children: [
+            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("label", {
+                htmlFor: label,
+                className: "ud-capitalize ud-font-semibold ud-mb-1 ud-text-gray-600 ud-text-sm",
+                __source: {
+                    fileName: "Dev/ud-miniapp-components/src/components/Input.js",
+                    lineNumber: 10,
+                    columnNumber: 7
+                },
+                __self: undefined,
+                children: label
+            }),
+            /*#__PURE__*/ $fbsOk$reactjsxruntime.jsx("input", {
+                ref: ref,
+                ...rest,
+                className: ($parcel$interopDefault($fbsOk$classnames))('ud-appearance-none ud-bg-white ud-px-4 ud-py-2 ud-rounded-lg ud-border ud-text-lg placeholder:ud-text-gray-400', className, {
+                    'ud-border-danger focus:ud-ring-0': error
+                }, $34a654368e265f37$export$314a718b3c247043),
+                __source: {
+                    fileName: "Dev/ud-miniapp-components/src/components/Input.js",
+                    lineNumber: 16,
+                    columnNumber: 7
+                },
+                __self: undefined
+            })
+        ]
+    }));
+});
+$2480fd5c982ae396$var$Input.displayName = 'Input';
+$2480fd5c982ae396$var$Input.propTypes = {
+    label: ($parcel$interopDefault($fbsOk$proptypes)).string,
+    error: ($parcel$interopDefault($fbsOk$proptypes)).bool,
+    className: ($parcel$interopDefault($fbsOk$proptypes)).string
+};
+var // export const InputError = ({ children, className }) => {
+//   return (
+//     <span className={classNames('ud-text-sm ud-text-danger', className)}>
+//       {children}
+//     </span>
+//   );
+// };
+// InputError.propTypes = {
+//   children: PropTypes.node,
+//   className: PropTypes.string,
+// };
+$2480fd5c982ae396$export$2e2bcd8739ae039 = $2480fd5c982ae396$var$Input;
 
 
 

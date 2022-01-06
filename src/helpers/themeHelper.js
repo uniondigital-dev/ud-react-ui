@@ -1,7 +1,10 @@
 const VARIANT = {
-  primary: 'bg-blue-100 text-blue-800',
-  danger: 'bg-red-100 text-red-800',
-  success: 'bg-green-100 text-green-800',
+  primary: 'ud-bg-blue-100 ud-text-blue-800',
+  danger: 'ud-bg-red-100 ud-text-red-800',
+  success: 'ud-bg-green-100 ud-text-green-800',
 };
 
-export { VARIANT };
+const FOCUS_RING =
+  'focus:ud-outline-none focus:ud-ring-1 focus:ud-ring-offset-0 focus:ud-ring-primary';
+
+export { VARIANT, FOCUS_RING };

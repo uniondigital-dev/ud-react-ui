@@ -1,8 +1,11 @@
 import {jsx as $7pxzy$jsx, jsxs as $7pxzy$jsxs} from "react/jsx-runtime";
-import "react";
+import {forwardRef as $7pxzy$forwardRef} from "react";
 import $7pxzy$proptypes from "prop-types";
 import $7pxzy$classnames from "classnames";
 
+function $parcel$export(e, n, v, s) {
+  Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
+}
 
 
 
@@ -329,6 +332,78 @@ $d58f8462e748373e$var$ContentCard.propTypes = {
 var $d58f8462e748373e$export$2e2bcd8739ae039 = $d58f8462e748373e$var$ContentCard;
 
 
+var $1b9a2382c35e7c9d$exports = {};
+
+$parcel$export($1b9a2382c35e7c9d$exports, "default", () => $1b9a2382c35e7c9d$export$2e2bcd8739ae039, (v) => $1b9a2382c35e7c9d$export$2e2bcd8739ae039 = v);
+
+
+
+
+const $71b468bbd7612df3$export$cf3f0695ece5ed77 = {
+    primary: 'ud-bg-blue-100 ud-text-blue-800',
+    danger: 'ud-bg-red-100 ud-text-red-800',
+    success: 'ud-bg-green-100 ud-text-green-800'
+};
+const $71b468bbd7612df3$export$314a718b3c247043 = 'focus:ud-outline-none focus:ud-ring-1 focus:ud-ring-offset-0 focus:ud-ring-primary';
+
+
+const $1b9a2382c35e7c9d$var$Input = /*#__PURE__*/ $7pxzy$forwardRef(({ label: label , error: error , className: className , ...rest }, ref)=>{
+    return(/*#__PURE__*/ $7pxzy$jsxs("div", {
+        className: "ud-flex ud-flex-col ud-w-full",
+        __source: {
+            fileName: "Dev/ud-miniapp-components/src/components/Input.js",
+            lineNumber: 9,
+            columnNumber: 5
+        },
+        __self: undefined,
+        children: [
+            /*#__PURE__*/ $7pxzy$jsx("label", {
+                htmlFor: label,
+                className: "ud-capitalize ud-font-semibold ud-mb-1 ud-text-gray-600 ud-text-sm",
+                __source: {
+                    fileName: "Dev/ud-miniapp-components/src/components/Input.js",
+                    lineNumber: 10,
+                    columnNumber: 7
+                },
+                __self: undefined,
+                children: label
+            }),
+            /*#__PURE__*/ $7pxzy$jsx("input", {
+                ref: ref,
+                ...rest,
+                className: $7pxzy$classnames('ud-appearance-none ud-bg-white ud-px-4 ud-py-2 ud-rounded-lg ud-border ud-text-lg placeholder:ud-text-gray-400', className, {
+                    'ud-border-danger focus:ud-ring-0': error
+                }, $71b468bbd7612df3$export$314a718b3c247043),
+                __source: {
+                    fileName: "Dev/ud-miniapp-components/src/components/Input.js",
+                    lineNumber: 16,
+                    columnNumber: 7
+                },
+                __self: undefined
+            })
+        ]
+    }));
+});
+$1b9a2382c35e7c9d$var$Input.displayName = 'Input';
+$1b9a2382c35e7c9d$var$Input.propTypes = {
+    label: $7pxzy$proptypes.string,
+    error: $7pxzy$proptypes.bool,
+    className: $7pxzy$proptypes.string
+};
+var // export const InputError = ({ children, className }) => {
+//   return (
+//     <span className={classNames('ud-text-sm ud-text-danger', className)}>
+//       {children}
+//     </span>
+//   );
+// };
+// InputError.propTypes = {
+//   children: PropTypes.node,
+//   className: PropTypes.string,
+// };
+$1b9a2382c35e7c9d$export$2e2bcd8739ae039 = $1b9a2382c35e7c9d$var$Input;
+
+
 
 
 
@@ -610,4 +685,4 @@ var $1ab94d04ba6b192a$export$2e2bcd8739ae039 = $1ab94d04ba6b192a$var$VSpace;
 
 
 
-export {$cd9b2ab9f8bfcd29$export$2e2bcd8739ae039 as Avatar, $625231aee116e27a$export$2e2bcd8739ae039 as AvatarList, $7fd2d5fc05b1931b$export$2e2bcd8739ae039 as Badge, $21d9cf92651b4335$export$2e2bcd8739ae039 as Button, $8e29fa5c29f068a1$export$2e2bcd8739ae039 as Container, $d58f8462e748373e$export$2e2bcd8739ae039 as ContentCard, $278d26b964537d66$export$2e2bcd8739ae039 as ContentCardList, $504dc15b912e26af$export$2e2bcd8739ae039 as LoanCard, $c6cdc2abd7247496$export$2e2bcd8739ae039 as Title, $1ab94d04ba6b192a$export$2e2bcd8739ae039 as VSpace};
+export {$cd9b2ab9f8bfcd29$export$2e2bcd8739ae039 as Avatar, $625231aee116e27a$export$2e2bcd8739ae039 as AvatarList, $7fd2d5fc05b1931b$export$2e2bcd8739ae039 as Badge, $21d9cf92651b4335$export$2e2bcd8739ae039 as Button, $8e29fa5c29f068a1$export$2e2bcd8739ae039 as Container, $d58f8462e748373e$export$2e2bcd8739ae039 as ContentCard, $1b9a2382c35e7c9d$export$2e2bcd8739ae039 as Input, $278d26b964537d66$export$2e2bcd8739ae039 as ContentCardList, $504dc15b912e26af$export$2e2bcd8739ae039 as LoanCard, $c6cdc2abd7247496$export$2e2bcd8739ae039 as Title, $1ab94d04ba6b192a$export$2e2bcd8739ae039 as VSpace};
