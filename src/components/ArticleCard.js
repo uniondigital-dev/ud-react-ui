@@ -25,7 +25,7 @@ ArticleCard.propTypes = {
 
 ArticleCard.defaultProps = {
   articleTitle: 'Article',
-  articleContent: 'Some details about the content',
+  articleContent: 'Some details about the article',
   onClick: () => {
     console.log('Article Card Clicked');
   },
