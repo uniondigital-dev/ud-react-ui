@@ -6,7 +6,7 @@ import Avatar from './Avatar';
 function ContentCard({ avatarUrl, coverUrl, title, shortDesc, onClick }) {
   return (
     <article
-      className="ud-flex ud-flex-col ud-rounded-lg ud-w-64 ud-bg-white ud-shadow-md ud-group hover:ud-bg-danger ud-cursor-pointer ud-overflow-hidden"
+      className="ud-flex ud-flex-col ud-rounded-lg ud-w-64 ud-bg-white ud-shadow-md ud-group hover:ud-bg-warning ud-cursor-pointer ud-overflow-hidden"
       onClick={onClick}
     >
       <div className="ud-relative ud-h-40">

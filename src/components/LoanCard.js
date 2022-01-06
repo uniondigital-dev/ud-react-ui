@@ -6,7 +6,7 @@ import Button from './Button';
 
 function LoanCard({ firstName, avatarUrl, amount, paymentDate, onPay }) {
   return (
-    <div className="ud-bg-danger ud-px-4 ud-py-6 ud-rounded-lg ud-shadow-sm">
+    <div className="ud-bg-warning ud-px-4 ud-py-6 ud-rounded-lg ud-shadow-sm">
       <div className="ud-flex ud-justify-between ud-items-center ud-w-full">
         <p className="ud-text-primary ud-text-base ud-capitalize">
           {firstName} Personal loan
