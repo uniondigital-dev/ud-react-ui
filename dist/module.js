@@ -90,6 +90,49 @@ var $625231aee116e27a$export$2e2bcd8739ae039 = $625231aee116e27a$var$AvatarList;
 
 
 
+const $7fd2d5fc05b1931b$var$SIZE = {
+    xs: 'ud-text-[10px] ud-px-2.5 ud-py-0.5',
+    sm: 'ud-text-xs ud-px-2.5 ud-py-0.5 '
+};
+const $7fd2d5fc05b1931b$var$VARIANT = {
+    primary: 'ud-bg-primary ud-text-white',
+    info: 'ud-bg-info ud-text-white',
+    danger: 'ud-bg-danger ud-text-white',
+    warning: 'ud-bg-warning ud-text-black',
+    success: 'ud-bg-success ud-text-white'
+};
+function $7fd2d5fc05b1931b$var$Badge({ variant: variant = 'primary' , size: size = 'sm' , children: children , onClick: onClick , ...rest }) {
+    return(/*#__PURE__*/ $7pxzy$jsx("span", {
+        onClick: onClick,
+        className: $7pxzy$classnames('ud-rounded-full ', $7fd2d5fc05b1931b$var$VARIANT[variant], $7fd2d5fc05b1931b$var$SIZE[size]),
+        ...rest,
+        __source: {
+            fileName: "Dev/ud-miniapp-components/src/components/Badge.js",
+            lineNumber: 26,
+            columnNumber: 5
+        },
+        __self: this,
+        children: children
+    }));
+}
+$7fd2d5fc05b1931b$var$Badge.propTypes = {
+    variant: $7pxzy$proptypes.oneOf([
+        'primary',
+        'info',
+        'danger',
+        'warning',
+        'success'
+    ]),
+    children: $7pxzy$proptypes.node,
+    onClick: $7pxzy$proptypes.func
+};
+var $7fd2d5fc05b1931b$export$2e2bcd8739ae039 = $7fd2d5fc05b1931b$var$Badge;
+
+
+
+
+
+
 const $21d9cf92651b4335$var$BUTTON_SIZE = {
     xs: 'ud-text-xs ud-px-3 ud-py-2 ',
     sm: 'ud-text-sm ud-px-3 ud-py-2',
@@ -99,9 +142,10 @@ const $21d9cf92651b4335$var$BUTTON_SIZE = {
 };
 const $21d9cf92651b4335$var$BUTTON_VARIANT = {
     primary: 'ud-bg-primary ud-text-white hover:ud-bg-primary-dark',
-    danger: 'ud-bg-red-100 ud-text-red-800 hover:ud-bg-red-200',
-    warning: 'ud-bg-yellow-100 ud-text-yellow-800 hover:ud-bg-yellow-200',
-    success: 'ud-bg-green-100 ud-text-green-800 hover:ud-bg-green-200',
+    info: 'ud-bg-info ud-text-white hover:ud-bg-info-dark',
+    danger: 'ud-bg-danger ud-text-white hover:ud-bg-danger-dark',
+    warning: 'ud-bg-warning ud-text-black hover:ud-bg-warning-dark',
+    success: 'ud-bg-success ud-text-white hover:ud-bg-success-dark',
     link: 'ud-text-primary ud-underline ud-bg-transparent hover:ud-text-primary-dark !ud-p-0'
 };
 function $21d9cf92651b4335$var$Button({ variant: variant = 'primary' , size: size = 'base' , children: children , className: className , block: block = false , disabled: disabled = false , ...rest }) {
@@ -114,7 +158,7 @@ function $21d9cf92651b4335$var$Button({ variant: variant = 'primary' , size: siz
         }),
         __source: {
             fileName: "Dev/ud-miniapp-components/src/components/Button.js",
-            lineNumber: 31,
+            lineNumber: 32,
             columnNumber: 5
         },
         __self: this,
@@ -126,10 +170,11 @@ $21d9cf92651b4335$var$Button.size = $21d9cf92651b4335$var$BUTTON_SIZE;
 $21d9cf92651b4335$var$Button.propTypes = {
     variant: $7pxzy$proptypes.oneOf([
         'primary',
+        'info',
         'danger',
         'warning',
         'success',
-        'link'
+        'link', 
     ]),
     size: $7pxzy$proptypes.oneOf([
         'xs',
@@ -174,7 +219,7 @@ var $8e29fa5c29f068a1$export$2e2bcd8739ae039 = $8e29fa5c29f068a1$var$Container;
 
 function $d58f8462e748373e$var$ContentCard({ avatarUrl: avatarUrl , coverUrl: coverUrl , title: title , shortDesc: shortDesc , onClick: onClick  }) {
     return(/*#__PURE__*/ $7pxzy$jsxs("article", {
-        className: "ud-flex ud-flex-col ud-rounded-lg ud-w-64 ud-bg-white ud-shadow-md ud-group hover:ud-bg-danger ud-cursor-pointer ud-overflow-hidden",
+        className: "ud-flex ud-flex-col ud-rounded-lg ud-w-64 ud-bg-white ud-shadow-md ud-group hover:ud-bg-warning ud-cursor-pointer ud-overflow-hidden",
         onClick: onClick,
         __source: {
             fileName: "Dev/ud-miniapp-components/src/components/ContentCard.js",
@@ -413,7 +458,7 @@ var $278d26b964537d66$export$2e2bcd8739ae039 = $278d26b964537d66$var$ContentCard
 
 function $504dc15b912e26af$var$LoanCard({ firstName: firstName , avatarUrl: avatarUrl , amount: amount , paymentDate: paymentDate , onPay: onPay  }) {
     return(/*#__PURE__*/ $7pxzy$jsxs("div", {
-        className: "ud-bg-danger ud-px-4 ud-py-6 ud-rounded-lg ud-shadow-sm",
+        className: "ud-bg-warning ud-px-4 ud-py-6 ud-rounded-lg ud-shadow-sm",
         __source: {
             fileName: "Dev/ud-miniapp-components/src/components/LoanCard.js",
             lineNumber: 9,
@@ -565,4 +610,4 @@ var $1ab94d04ba6b192a$export$2e2bcd8739ae039 = $1ab94d04ba6b192a$var$VSpace;
 
 
 
-export {$cd9b2ab9f8bfcd29$export$2e2bcd8739ae039 as Avatar, $625231aee116e27a$export$2e2bcd8739ae039 as AvatarList, $21d9cf92651b4335$export$2e2bcd8739ae039 as Button, $8e29fa5c29f068a1$export$2e2bcd8739ae039 as Container, $d58f8462e748373e$export$2e2bcd8739ae039 as ContentCard, $278d26b964537d66$export$2e2bcd8739ae039 as ContentCardList, $504dc15b912e26af$export$2e2bcd8739ae039 as LoanCard, $c6cdc2abd7247496$export$2e2bcd8739ae039 as Title, $1ab94d04ba6b192a$export$2e2bcd8739ae039 as VSpace};
+export {$cd9b2ab9f8bfcd29$export$2e2bcd8739ae039 as Avatar, $625231aee116e27a$export$2e2bcd8739ae039 as AvatarList, $7fd2d5fc05b1931b$export$2e2bcd8739ae039 as Badge, $21d9cf92651b4335$export$2e2bcd8739ae039 as Button, $8e29fa5c29f068a1$export$2e2bcd8739ae039 as Container, $d58f8462e748373e$export$2e2bcd8739ae039 as ContentCard, $278d26b964537d66$export$2e2bcd8739ae039 as ContentCardList, $504dc15b912e26af$export$2e2bcd8739ae039 as LoanCard, $c6cdc2abd7247496$export$2e2bcd8739ae039 as Title, $1ab94d04ba6b192a$export$2e2bcd8739ae039 as VSpace};
