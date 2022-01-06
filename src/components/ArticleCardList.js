@@ -3,13 +3,7 @@ import ArticleCard from './ArticleCard';
 import Title from './Title';
 import PropTypes from 'prop-types';
 
-function ArticleCardList({ title, items, onItemClick, hasPadding }) {
   return (
-    <div
-      className={classNames('ud-flex ud-flex-col ud-space-y-2', {
-        'ud-container ud-mx-auto ud-pl-6 ': hasPadding,
-      })}
-    >
       <div className="ud-flex ud-items-center ud-justify-between">
         <Title>{title}</Title>
       </div>
@@ -34,4 +28,8 @@ ArticleCardList.PropTypes = {
   onItemClick: PropTypes.func,
 };
 
+ArticleCardList.defaultProps = {
+  title: 'Title Here',
+  items: [
+    <ArticleCard />,
 export default ArticleCardList;
