@@ -3,7 +3,9 @@ import ArticleCard from './ArticleCard';
 import Title from './Title';
 import PropTypes from 'prop-types';
 
+function ArticleCardList({ title, items, onItemClick }) {
   return (
+    <div className="ud-flex ud-flex-col ud-space-y-2 ud-container ud-mx-auto">
       <div className="ud-flex ud-items-center ud-justify-between">
         <Title>{title}</Title>
       </div>
@@ -32,4 +34,14 @@ ArticleCardList.defaultProps = {
   title: 'Title Here',
   items: [
     <ArticleCard />,
+    <ArticleCard />,
+    <ArticleCard />,
+    <ArticleCard />,
+    <ArticleCard />,
+  ],
+  onItemClick: () => {
+    alert('Article Card Linked');
+  },
+};
+
 export default ArticleCardList;
