@@ -1,11 +1,56 @@
 import {jsx as $3Phvp$jsx, jsxs as $3Phvp$jsxs} from "react/jsx-runtime";
+<<<<<<< Updated upstream
 import "react";
+=======
+import {forwardRef as $3Phvp$forwardRef} from "react";
+>>>>>>> Stashed changes
 import $3Phvp$proptypes from "prop-types";
 import $3Phvp$classnames from "classnames";
 
 function $parcel$export(e, n, v, s) {
   Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
 }
+<<<<<<< Updated upstream
+var $parcel$global =
+typeof globalThis !== 'undefined'
+  ? globalThis
+  : typeof self !== 'undefined'
+  ? self
+  : typeof window !== 'undefined'
+  ? window
+  : typeof global !== 'undefined'
+  ? global
+  : {};
+var $parcel$modules = {};
+var $parcel$inits = {};
+
+var parcelRequire = $parcel$global["parcelRequireb326"];
+if (parcelRequire == null) {
+  parcelRequire = function(id) {
+    if (id in $parcel$modules) {
+      return $parcel$modules[id].exports;
+    }
+    if (id in $parcel$inits) {
+      var init = $parcel$inits[id];
+      delete $parcel$inits[id];
+      var module = {id: id, exports: {}};
+      $parcel$modules[id] = module;
+      init.call(module.exports, module, module.exports);
+      return module.exports;
+    }
+    var err = new Error("Cannot find module '" + id + "'");
+    err.code = 'MODULE_NOT_FOUND';
+    throw err;
+  };
+
+  parcelRequire.register = function register(id, init) {
+    $parcel$inits[id] = init;
+  };
+
+  $parcel$global["parcelRequireb326"] = parcelRequire;
+}
+=======
+>>>>>>> Stashed changes
 
 
 
@@ -332,6 +377,81 @@ $6924463d2fa47c63$var$ContentCard.propTypes = {
 var $6924463d2fa47c63$export$2e2bcd8739ae039 = $6924463d2fa47c63$var$ContentCard;
 
 
+<<<<<<< Updated upstream
+=======
+var $c593b70382f6ff63$exports = {};
+
+$parcel$export($c593b70382f6ff63$exports, "default", () => $c593b70382f6ff63$export$2e2bcd8739ae039, (v) => $c593b70382f6ff63$export$2e2bcd8739ae039 = v);
+
+
+
+
+const $17d46c0acc593edb$export$cf3f0695ece5ed77 = {
+    primary: 'ud-bg-blue-100 ud-text-blue-800',
+    danger: 'ud-bg-red-100 ud-text-red-800',
+    success: 'ud-bg-green-100 ud-text-green-800'
+};
+const $17d46c0acc593edb$export$314a718b3c247043 = 'focus:ud-outline-none focus:ud-ring-1 focus:ud-ring-offset-0 focus:ud-ring-primary';
+
+
+const $c593b70382f6ff63$var$Input = /*#__PURE__*/ $3Phvp$forwardRef(({ label: label , error: error , className: className , ...rest }, ref)=>{
+    return(/*#__PURE__*/ $3Phvp$jsxs("div", {
+        className: "ud-flex ud-flex-col ud-w-full",
+        __source: {
+            fileName: "src/components/Input.js",
+            lineNumber: 9,
+            columnNumber: 5
+        },
+        __self: undefined,
+        children: [
+            /*#__PURE__*/ $3Phvp$jsx("label", {
+                htmlFor: label,
+                className: "ud-capitalize ud-font-semibold ud-mb-1 ud-text-gray-600 ud-text-sm",
+                __source: {
+                    fileName: "src/components/Input.js",
+                    lineNumber: 10,
+                    columnNumber: 7
+                },
+                __self: undefined,
+                children: label
+            }),
+            /*#__PURE__*/ $3Phvp$jsx("input", {
+                ref: ref,
+                ...rest,
+                className: $3Phvp$classnames('ud-appearance-none ud-bg-white ud-px-4 ud-py-2 ud-rounded-lg ud-border ud-text-lg placeholder:ud-text-gray-400', className, {
+                    'ud-border-danger focus:ud-ring-0': error
+                }, $17d46c0acc593edb$export$314a718b3c247043),
+                __source: {
+                    fileName: "src/components/Input.js",
+                    lineNumber: 16,
+                    columnNumber: 7
+                },
+                __self: undefined
+            })
+        ]
+    }));
+});
+$c593b70382f6ff63$var$Input.displayName = 'Input';
+$c593b70382f6ff63$var$Input.propTypes = {
+    label: $3Phvp$proptypes.string,
+    error: $3Phvp$proptypes.bool,
+    className: $3Phvp$proptypes.string
+};
+var // export const InputError = ({ children, className }) => {
+//   return (
+//     <span className={classNames('ud-text-sm ud-text-danger', className)}>
+//       {children}
+//     </span>
+//   );
+// };
+// InputError.propTypes = {
+//   children: PropTypes.node,
+//   className: PropTypes.string,
+// };
+$c593b70382f6ff63$export$2e2bcd8739ae039 = $c593b70382f6ff63$var$Input;
+
+
+>>>>>>> Stashed changes
 
 
 
@@ -580,6 +700,32 @@ var $325d308f24f2e5ea$export$2e2bcd8739ae039 = $325d308f24f2e5ea$var$LoanCard;
 
 
 
+<<<<<<< Updated upstream
+=======
+function $a052be4d04cb007a$var$Subtitle({ children: children  }) {
+    return(/*#__PURE__*/ $3Phvp$jsx("h3", {
+        className: "ud-text-sm ud-font-normal ud-text-gray-600",
+        __source: {
+            fileName: "src/components/Subtitle.js",
+            lineNumber: 6,
+            columnNumber: 5
+        },
+        __self: this,
+        children: children
+    }));
+}
+$a052be4d04cb007a$var$Subtitle.propTypes = {
+    children: $3Phvp$proptypes.oneOfType([
+        $3Phvp$proptypes.string
+    ]).isRequired
+};
+var $a052be4d04cb007a$export$2e2bcd8739ae039 = $a052be4d04cb007a$var$Subtitle;
+
+
+
+
+
+>>>>>>> Stashed changes
 
 const $90cd42957002a5f0$var$SPACE_SIZE = {
     xs: 'ud-mt-1',
@@ -616,13 +762,70 @@ var $90cd42957002a5f0$export$2e2bcd8739ae039 = $90cd42957002a5f0$var$VSpace;
 
 
 
+<<<<<<< Updated upstream
+parcelRequire.register("lr0dR", function(module, exports) {
+
+module.exports = (parcelRequire("35WCw")).getBundleURL('3Phvp') + "Exclude.16a0dfc2.png";
+
+});
+parcelRequire.register("35WCw", function(module, exports) {
+
+$parcel$export(module.exports, "getBundleURL", () => $240f4f811bd65243$export$bdfd709ae4826697, (v) => $240f4f811bd65243$export$bdfd709ae4826697 = v);
+var $240f4f811bd65243$export$bdfd709ae4826697;
+var $240f4f811bd65243$export$c9e73fbda7da57b6;
+var $240f4f811bd65243$export$5a759dc7a1cfb72a;
+"use strict";
+var $240f4f811bd65243$var$bundleURL = {
+};
+function $240f4f811bd65243$var$getBundleURLCached(id) {
+    var value = $240f4f811bd65243$var$bundleURL[id];
+    if (!value) {
+        value = $240f4f811bd65243$var$getBundleURL();
+        $240f4f811bd65243$var$bundleURL[id] = value;
+    }
+    return value;
+}
+function $240f4f811bd65243$var$getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return $240f4f811bd65243$var$getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function $240f4f811bd65243$var$getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function $240f4f811bd65243$var$getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+$240f4f811bd65243$export$bdfd709ae4826697 = $240f4f811bd65243$var$getBundleURLCached;
+$240f4f811bd65243$export$c9e73fbda7da57b6 = $240f4f811bd65243$var$getBaseURL;
+$240f4f811bd65243$export$5a759dc7a1cfb72a = $240f4f811bd65243$var$getOrigin;
+
+});
+
+
+
+
+=======
+>>>>>>> Stashed changes
 function $5bda6e165d715659$var$ArticleCard({ articleTitle: articleTitle , articleContent: articleContent , onClick: onClick  }) {
     return(/*#__PURE__*/ $3Phvp$jsx("div", {
         className: "ud-w-40 ud-shadow-md",
         onClick: onClick,
         __source: {
             fileName: "src/components/ArticleCard.js",
+<<<<<<< Updated upstream
+            lineNumber: 9,
+=======
             lineNumber: 8,
+>>>>>>> Stashed changes
             columnNumber: 5
         },
         __self: this,
@@ -630,7 +833,11 @@ function $5bda6e165d715659$var$ArticleCard({ articleTitle: articleTitle , articl
             className: "ud-bg-violet-200 hover:ud-bg-violet-300 ud-py-6 ud-px-4 ud-rounded-lg",
             __source: {
                 fileName: "src/components/ArticleCard.js",
+<<<<<<< Updated upstream
+                lineNumber: 10,
+=======
                 lineNumber: 9,
+>>>>>>> Stashed changes
                 columnNumber: 7
             },
             __self: this,
@@ -638,7 +845,11 @@ function $5bda6e165d715659$var$ArticleCard({ articleTitle: articleTitle , articl
                 /*#__PURE__*/ $3Phvp$jsx($bd07cc75cb7daa6b$export$2e2bcd8739ae039, {
                     __source: {
                         fileName: "src/components/ArticleCard.js",
+<<<<<<< Updated upstream
+                        lineNumber: 11,
+=======
                         lineNumber: 10,
+>>>>>>> Stashed changes
                         columnNumber: 9
                     },
                     __self: this,
@@ -647,14 +858,22 @@ function $5bda6e165d715659$var$ArticleCard({ articleTitle: articleTitle , articl
                 /*#__PURE__*/ $3Phvp$jsx("div", {
                     __source: {
                         fileName: "src/components/ArticleCard.js",
+<<<<<<< Updated upstream
+                        lineNumber: 12,
+=======
                         lineNumber: 11,
+>>>>>>> Stashed changes
                         columnNumber: 9
                     },
                     __self: this,
                     children: /*#__PURE__*/ $3Phvp$jsxs("p", {
                         __source: {
                             fileName: "src/components/ArticleCard.js",
+<<<<<<< Updated upstream
+                            lineNumber: 13,
+=======
                             lineNumber: 12,
+>>>>>>> Stashed changes
                             columnNumber: 11
                         },
                         __self: this,
@@ -663,6 +882,26 @@ function $5bda6e165d715659$var$ArticleCard({ articleTitle: articleTitle , articl
                             articleContent
                         ]
                     })
+<<<<<<< Updated upstream
+                }),
+                /*#__PURE__*/ $3Phvp$jsx("div", {
+                    __source: {
+                        fileName: "src/components/ArticleCard.js",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    },
+                    __self: this,
+                    children: /*#__PURE__*/ $3Phvp$jsx("img", {
+                        src: (parcelRequire("lr0dR")),
+                        __source: {
+                            fileName: "src/components/ArticleCard.js",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        },
+                        __self: this
+                    })
+=======
+>>>>>>> Stashed changes
                 })
             ]
         })
@@ -683,20 +922,32 @@ $5bda6e165d715659$var$ArticleCard.defaultProps = {
 var $5bda6e165d715659$export$2e2bcd8739ae039 = $5bda6e165d715659$var$ArticleCard;
 
 
+<<<<<<< Updated upstream
+=======
 var $d10753b9ef4a9524$exports = {};
 
 $parcel$export($d10753b9ef4a9524$exports, "default", () => $d10753b9ef4a9524$export$2e2bcd8739ae039, (v) => $d10753b9ef4a9524$export$2e2bcd8739ae039 = v);
+>>>>>>> Stashed changes
 
 
 
 
 
+<<<<<<< Updated upstream
+function $d10753b9ef4a9524$var$ArticleCardList({ title: title , articleTitle: articleTitle , articleContent: articleContent , items: items , onItemClick: onItemClick , hasPadding: hasPadding ,  }) {
+    return(/*#__PURE__*/ $3Phvp$jsxs("div", {
+        className: "ud-flex ud-flex-col ud-space-y-2 ud-container ud-mx-auto ud-pl-6",
+        __source: {
+            fileName: "src/components/ArticleCardList.js",
+            lineNumber: 15,
+=======
 function $d10753b9ef4a9524$var$ArticleCardList({ title: title , items: items , onItemClick: onItemClick  }) {
     return(/*#__PURE__*/ $3Phvp$jsxs("div", {
         className: "ud-flex ud-flex-col ud-space-y-2 ud-container ud-mx-auto",
         __source: {
             fileName: "src/components/ArticleCardList.js",
             lineNumber: 8,
+>>>>>>> Stashed changes
             columnNumber: 5
         },
         __self: this,
@@ -705,14 +956,22 @@ function $d10753b9ef4a9524$var$ArticleCardList({ title: title , items: items , o
                 className: "ud-flex ud-items-center ud-justify-between",
                 __source: {
                     fileName: "src/components/ArticleCardList.js",
+<<<<<<< Updated upstream
+                    lineNumber: 16,
+=======
                     lineNumber: 9,
+>>>>>>> Stashed changes
                     columnNumber: 7
                 },
                 __self: this,
                 children: /*#__PURE__*/ $3Phvp$jsx($bd07cc75cb7daa6b$export$2e2bcd8739ae039, {
                     __source: {
                         fileName: "src/components/ArticleCardList.js",
+<<<<<<< Updated upstream
+                        lineNumber: 17,
+=======
                         lineNumber: 10,
+>>>>>>> Stashed changes
                         columnNumber: 9
                     },
                     __self: this,
@@ -723,25 +982,41 @@ function $d10753b9ef4a9524$var$ArticleCardList({ title: title , items: items , o
                 className: "ud-flex ud-space-x-2 ud-overflow-x-scroll",
                 __source: {
                     fileName: "src/components/ArticleCardList.js",
+<<<<<<< Updated upstream
+                    lineNumber: 19,
+=======
                     lineNumber: 12,
+>>>>>>> Stashed changes
                     columnNumber: 7
                 },
                 __self: this,
                 children: items.map((item, index)=>/*#__PURE__*/ $3Phvp$jsx("div", {
                         __source: {
                             fileName: "src/components/ArticleCardList.js",
+<<<<<<< Updated upstream
+                            lineNumber: 21,
+                            columnNumber: 11
+                        },
+                        __self: this,
+                        children: /*#__PURE__*/ $3Phvp$jsx($5bda6e165d715659$exports.default, {
+=======
                             lineNumber: 14,
                             columnNumber: 11
                         },
                         __self: this,
                         children: /*#__PURE__*/ $3Phvp$jsx($5bda6e165d715659$export$2e2bcd8739ae039, {
+>>>>>>> Stashed changes
                             articleTitle: item.articleTitle,
                             articleContent: item.articleContent,
                             onClick: ()=>onItemClick(item)
                             ,
                             __source: {
                                 fileName: "src/components/ArticleCardList.js",
+<<<<<<< Updated upstream
+                                lineNumber: 22,
+=======
                                 lineNumber: 15,
+>>>>>>> Stashed changes
                                 columnNumber: 13
                             },
                             __self: this
@@ -754,6 +1029,13 @@ function $d10753b9ef4a9524$var$ArticleCardList({ title: title , items: items , o
 }
 $d10753b9ef4a9524$var$ArticleCardList.PropTypes = {
     title: $3Phvp$proptypes.string,
+<<<<<<< Updated upstream
+    articleTitle: $3Phvp$proptypes.string,
+    articleContent: $3Phvp$proptypes.string,
+    items: $3Phvp$proptypes.array,
+    onItemClick: $3Phvp$proptypes.func
+};
+=======
     items: $3Phvp$proptypes.array,
     onItemClick: $3Phvp$proptypes.func
 };
@@ -805,9 +1087,14 @@ $d10753b9ef4a9524$var$ArticleCardList.defaultProps = {
         alert('Article Card Clicked');
     }
 };
+>>>>>>> Stashed changes
 var $d10753b9ef4a9524$export$2e2bcd8739ae039 = $d10753b9ef4a9524$var$ArticleCardList;
 
 
 
 
-export {$d216efa10efac397$export$2e2bcd8739ae039 as Avatar, $dba7d7b6deb6389f$export$2e2bcd8739ae039 as AvatarList, $bdce10c2c83416bd$export$2e2bcd8739ae039 as Badge, $ce734a8366ecbc94$export$2e2bcd8739ae039 as Button, $7cdbd898ae60260d$export$2e2bcd8739ae039 as Container, $6924463d2fa47c63$export$2e2bcd8739ae039 as ContentCard, $cb140192ae76f5c0$export$2e2bcd8739ae039 as ContentCardList, $325d308f24f2e5ea$export$2e2bcd8739ae039 as LoanCard, $bd07cc75cb7daa6b$export$2e2bcd8739ae039 as Title, $90cd42957002a5f0$export$2e2bcd8739ae039 as VSpace, $5bda6e165d715659$export$2e2bcd8739ae039 as ArticleCard, $d10753b9ef4a9524$export$2e2bcd8739ae039 as ArticleCardList};
+<<<<<<< Updated upstream
+export {$d216efa10efac397$export$2e2bcd8739ae039 as Avatar, $dba7d7b6deb6389f$export$2e2bcd8739ae039 as AvatarList, $bdce10c2c83416bd$export$2e2bcd8739ae039 as Badge, $ce734a8366ecbc94$export$2e2bcd8739ae039 as Button, $7cdbd898ae60260d$export$2e2bcd8739ae039 as Container, $6924463d2fa47c63$export$2e2bcd8739ae039 as ContentCard, $cb140192ae76f5c0$export$2e2bcd8739ae039 as ContentCardList, $325d308f24f2e5ea$export$2e2bcd8739ae039 as LoanCard, $bd07cc75cb7daa6b$export$2e2bcd8739ae039 as Title, $90cd42957002a5f0$export$2e2bcd8739ae039 as VSpace, $d10753b9ef4a9524$export$2e2bcd8739ae039 as ArticleCardList};
+=======
+export {$d216efa10efac397$export$2e2bcd8739ae039 as Avatar, $dba7d7b6deb6389f$export$2e2bcd8739ae039 as AvatarList, $bdce10c2c83416bd$export$2e2bcd8739ae039 as Badge, $ce734a8366ecbc94$export$2e2bcd8739ae039 as Button, $7cdbd898ae60260d$export$2e2bcd8739ae039 as Container, $6924463d2fa47c63$export$2e2bcd8739ae039 as ContentCard, $c593b70382f6ff63$export$2e2bcd8739ae039 as Input, $cb140192ae76f5c0$export$2e2bcd8739ae039 as ContentCardList, $325d308f24f2e5ea$export$2e2bcd8739ae039 as LoanCard, $bd07cc75cb7daa6b$export$2e2bcd8739ae039 as Title, $a052be4d04cb007a$export$2e2bcd8739ae039 as Subtitle, $90cd42957002a5f0$export$2e2bcd8739ae039 as VSpace, $5bda6e165d715659$export$2e2bcd8739ae039 as ArticleCard, $d10753b9ef4a9524$export$2e2bcd8739ae039 as ArticleCardList};
+>>>>>>> Stashed changes

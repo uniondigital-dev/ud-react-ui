@@ -428,6 +428,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 *, ::before, ::after{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -513,6 +517,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
 }
 
+.ud-mb-1{
+  margin-bottom: 0.25rem;
+}
+
 .ud-block{
   display: block;
 }
@@ -547,6 +555,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ud-cursor-pointer{
   cursor: pointer;
+}
+
+.ud-appearance-none{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .ud-flex-col{
@@ -613,9 +627,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 0px;
 }
 
+.ud-border{
+  border-width: 1px;
+}
+
 .ud-border-white{
   --tw-border-opacity: 1;
   border-color: rgb(250 250 250 / var(--tw-border-opacity));
+}
+
+.ud-border-danger{
+  --tw-border-opacity: 1;
+  border-color: rgb(231 59 72 / var(--tw-border-opacity));
 }
 
 .ud-bg-violet-200{
@@ -663,6 +686,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ud-bg-primary\/20{
   background-color: rgb(116 67 228 / 0.2);
+}
+
+.ud-bg-blue-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+.ud-bg-red-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
+.ud-bg-green-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
 }
 
 .ud-object-cover{
@@ -788,6 +826,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.ud-font-normal{
+  font-weight: 400;
+}
+
 .ud-uppercase{
   text-transform: uppercase;
 }
@@ -811,6 +853,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(116 67 228 / var(--tw-text-opacity));
 }
 
+.ud-text-gray-600{
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.ud-text-danger{
+  --tw-text-opacity: 1;
+  color: rgb(231 59 72 / var(--tw-text-opacity));
+}
+
+.ud-text-blue-800{
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.ud-text-red-800{
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity));
+}
+
+.ud-text-green-800{
+  --tw-text-opacity: 1;
+  color: rgb(22 101 52 / var(--tw-text-opacity));
+}
+
 .ud-underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -826,6 +893,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.placeholder\:ud-text-gray-400::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.placeholder\:ud-text-gray-400:-ms-input-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.placeholder\:ud-text-gray-400::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .hover\:ud-bg-violet-300:hover{
@@ -866,6 +948,32 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:ud-text-primary-dark:hover{
   --tw-text-opacity: 1;
   color: rgb(64 0 155 / var(--tw-text-opacity));
+}
+
+.focus\:ud-outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:ud-ring-0:focus{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ud-ring-1:focus{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ud-ring-primary:focus{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(116 67 228 / var(--tw-ring-opacity));
+}
+
+.focus\:ud-ring-offset-0:focus{
+  --tw-ring-offset-width: 0px;
 }
 
 .disabled\:ud-cursor-not-allowed:disabled{
