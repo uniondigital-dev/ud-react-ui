@@ -7,4 +7,5 @@ export { default as ContentCard } from './components/ContentCard';
 export { default as ContentCardList } from './components/ContentCardList';
 export { default as LoanCard } from './components/LoanCard';
 export { default as Title } from './components/Title';
+export { default as Subtitle } from './components/Subtitle';
 export { default as VSpace } from './components/VSpace';
