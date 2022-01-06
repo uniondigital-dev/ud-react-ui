@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 function ArticleCardList({ title, items, onItemClick }) {
   return (
     <div className="ud-flex ud-flex-col ud-space-y-2 ud-container ud-mx-auto">
-      <div className="ud-flex ud-items-center ud-justify-between">
+      <div>
         <Title>{title}</Title>
       </div>
       <div className="ud-flex ud-space-x-2 ud-overflow-x-scroll">
@@ -24,7 +24,7 @@ function ArticleCardList({ title, items, onItemClick }) {
   );
 }
 
-ArticleCardList.PropTypes = {
+ArticleCardList.propTypes = {
   title: PropTypes.string,
   items: PropTypes.array,
   onItemClick: PropTypes.func,
