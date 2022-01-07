@@ -21,7 +21,7 @@ $parcel$export(module.exports, "LoanCard", () => $caf936a2347067ba$export$2e2bcd
 $parcel$export(module.exports, "Title", () => $8026b5d0dd95d057$export$2e2bcd8739ae039);
 $parcel$export(module.exports, "VSpace", () => $2ff28e8b883a699f$export$2e2bcd8739ae039);
 $parcel$export(module.exports, "ArticleCard", () => $2c9b3ab99bc7039e$export$2e2bcd8739ae039);
-$parcel$export(module.exports, "ArticleCardList", () => $80a1a9fa7fe3c685$exports.default);
+$parcel$export(module.exports, "ArticleCardList", () => $80a1a9fa7fe3c685$export$2e2bcd8739ae039);
 
 
 
@@ -634,7 +634,7 @@ var $2ff28e8b883a699f$export$2e2bcd8739ae039 = $2ff28e8b883a699f$var$VSpace;
 
 function $2c9b3ab99bc7039e$var$ArticleCard({ articleTitle: articleTitle , articleContent: articleContent , onClick: onClick  }) {
     return(/*#__PURE__*/ $81XA9$reactjsxruntime.jsx("div", {
-        className: "ud-w-40 ud-shadow-md",
+        className: "ud-relative ud-bg-violet-200 hover:ud-bg-violet-300 ud-w-40 ud-shadow-md ud-rounded-lg",
         onClick: onClick,
         __source: {
             fileName: "src/components/ArticleCard.js",
@@ -643,10 +643,10 @@ function $2c9b3ab99bc7039e$var$ArticleCard({ articleTitle: articleTitle , articl
         },
         __self: this,
         children: /*#__PURE__*/ $81XA9$reactjsxruntime.jsxs("div", {
-            className: "ud-bg-violet-200 hover:ud-bg-violet-300 ud-py-6 ud-px-4 ud-rounded-lg",
+            className: "ud-py-6 ud-px-4 ",
             __source: {
                 fileName: "src/components/ArticleCard.js",
-                lineNumber: 9,
+                lineNumber: 12,
                 columnNumber: 7
             },
             __self: this,
@@ -654,23 +654,24 @@ function $2c9b3ab99bc7039e$var$ArticleCard({ articleTitle: articleTitle , articl
                 /*#__PURE__*/ $81XA9$reactjsxruntime.jsx($8026b5d0dd95d057$export$2e2bcd8739ae039, {
                     __source: {
                         fileName: "src/components/ArticleCard.js",
-                        lineNumber: 10,
+                        lineNumber: 13,
                         columnNumber: 9
                     },
                     __self: this,
                     children: articleTitle
                 }),
                 /*#__PURE__*/ $81XA9$reactjsxruntime.jsx("div", {
+                    className: "ud-sticky ud-z-10 ud-left-4 ud-bottom-4",
                     __source: {
                         fileName: "src/components/ArticleCard.js",
-                        lineNumber: 11,
+                        lineNumber: 14,
                         columnNumber: 9
                     },
                     __self: this,
                     children: /*#__PURE__*/ $81XA9$reactjsxruntime.jsxs("p", {
                         __source: {
                             fileName: "src/components/ArticleCard.js",
-                            lineNumber: 12,
+                            lineNumber: 15,
                             columnNumber: 11
                         },
                         __self: this,
@@ -679,29 +680,57 @@ function $2c9b3ab99bc7039e$var$ArticleCard({ articleTitle: articleTitle , articl
                             articleContent
                         ]
                     })
+                }),
+                /*#__PURE__*/ $81XA9$reactjsxruntime.jsx("div", {
+                    className: "ud-absolute ud-right-0 ud-bottom-0 ud-z-0",
+                    __source: {
+                        fileName: "src/components/ArticleCard.js",
+                        lineNumber: 17,
+                        columnNumber: 9
+                    },
+                    __self: this,
+                    children: /*#__PURE__*/ $81XA9$reactjsxruntime.jsx("svg", {
+                        width: "85",
+                        height: "84",
+                        viewBox: "0 0 85 84",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        __source: {
+                            fileName: "src/components/ArticleCard.js",
+                            lineNumber: 18,
+                            columnNumber: 11
+                        },
+                        __self: this,
+                        children: /*#__PURE__*/ $81XA9$reactjsxruntime.jsx("path", {
+                            "fill-rule": "evenodd",
+                            "clip-rule": "evenodd",
+                            d: "M82.5 165C128.063 165 165 128.063 165 82.5C165 36.9365 128.063 0 82.5 0C36.9365 0 0 36.9365 0 82.5C0 128.063 36.9365 165 82.5 165ZM82.76 120.665C103.695 120.665 120.665 103.694 120.665 82.7598C120.665 61.8252 103.695 44.8544 82.76 44.8544C61.8254 44.8544 44.8546 61.8252 44.8546 82.7598C44.8546 103.694 61.8254 120.665 82.76 120.665Z",
+                            fill: "#c4b5fd",
+                            __source: {
+                                fileName: "src/components/ArticleCard.js",
+                                lineNumber: 25,
+                                columnNumber: 13
+                            },
+                            __self: this
+                        })
+                    })
                 })
             ]
         })
     }));
 }
-$2c9b3ab99bc7039e$var$ArticleCard.PropTypes = {
+$2c9b3ab99bc7039e$var$ArticleCard.propTypes = {
     articleTitle: ($parcel$interopDefault($81XA9$proptypes)).string.isRequired,
     articleContent: ($parcel$interopDefault($81XA9$proptypes)).string.isRequired,
     onClick: ($parcel$interopDefault($81XA9$proptypes)).func
 };
 $2c9b3ab99bc7039e$var$ArticleCard.defaultProps = {
-    articleTitle: 'Article',
-    articleContent: 'Some details about the content',
-    onClick: ()=>{
-        console.log('Article Card Clicked');
-    }
+    articleTitle: 'Sample Article Title',
+    articleContent: 'Sample Article Content Updated'
 };
 var $2c9b3ab99bc7039e$export$2e2bcd8739ae039 = $2c9b3ab99bc7039e$var$ArticleCard;
 
 
-var $80a1a9fa7fe3c685$exports = {};
-
-$parcel$export($80a1a9fa7fe3c685$exports, "default", () => $80a1a9fa7fe3c685$export$2e2bcd8739ae039, (v) => $80a1a9fa7fe3c685$export$2e2bcd8739ae039 = v);
 
 
 
@@ -718,7 +747,6 @@ function $80a1a9fa7fe3c685$var$ArticleCardList({ title: title , items: items , o
         __self: this,
         children: [
             /*#__PURE__*/ $81XA9$reactjsxruntime.jsx("div", {
-                className: "ud-flex ud-items-center ud-justify-between",
                 __source: {
                     fileName: "src/components/ArticleCardList.js",
                     lineNumber: 9,
@@ -768,58 +796,10 @@ function $80a1a9fa7fe3c685$var$ArticleCardList({ title: title , items: items , o
         ]
     }));
 }
-$80a1a9fa7fe3c685$var$ArticleCardList.PropTypes = {
+$80a1a9fa7fe3c685$var$ArticleCardList.propTypes = {
     title: ($parcel$interopDefault($81XA9$proptypes)).string,
     items: ($parcel$interopDefault($81XA9$proptypes)).array,
     onItemClick: ($parcel$interopDefault($81XA9$proptypes)).func
-};
-$80a1a9fa7fe3c685$var$ArticleCardList.defaultProps = {
-    title: 'Title Here',
-    items: [
-        /*#__PURE__*/ $81XA9$reactjsxruntime.jsx($2c9b3ab99bc7039e$export$2e2bcd8739ae039, {
-            __source: {
-                fileName: "src/components/ArticleCardList.js",
-                lineNumber: 36,
-                columnNumber: 5
-            },
-            __self: undefined
-        }),
-        /*#__PURE__*/ $81XA9$reactjsxruntime.jsx($2c9b3ab99bc7039e$export$2e2bcd8739ae039, {
-            __source: {
-                fileName: "src/components/ArticleCardList.js",
-                lineNumber: 37,
-                columnNumber: 5
-            },
-            __self: undefined
-        }),
-        /*#__PURE__*/ $81XA9$reactjsxruntime.jsx($2c9b3ab99bc7039e$export$2e2bcd8739ae039, {
-            __source: {
-                fileName: "src/components/ArticleCardList.js",
-                lineNumber: 38,
-                columnNumber: 5
-            },
-            __self: undefined
-        }),
-        /*#__PURE__*/ $81XA9$reactjsxruntime.jsx($2c9b3ab99bc7039e$export$2e2bcd8739ae039, {
-            __source: {
-                fileName: "src/components/ArticleCardList.js",
-                lineNumber: 39,
-                columnNumber: 5
-            },
-            __self: undefined
-        }),
-        /*#__PURE__*/ $81XA9$reactjsxruntime.jsx($2c9b3ab99bc7039e$export$2e2bcd8739ae039, {
-            __source: {
-                fileName: "src/components/ArticleCardList.js",
-                lineNumber: 40,
-                columnNumber: 5
-            },
-            __self: undefined
-        }), 
-    ],
-    onItemClick: ()=>{
-        alert('Article Card Clicked');
-    }
 };
 var $80a1a9fa7fe3c685$export$2e2bcd8739ae039 = $80a1a9fa7fe3c685$var$ArticleCardList;
 

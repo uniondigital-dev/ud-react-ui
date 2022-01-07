@@ -30,18 +30,4 @@ ArticleCardList.propTypes = {
   onItemClick: PropTypes.func,
 };
 
-ArticleCardList.defaultProps = {
-  title: 'Title Here',
-  items: [
-    <ArticleCard />,
-    <ArticleCard />,
-    <ArticleCard />,
-    <ArticleCard />,
-    <ArticleCard />,
-  ],
-  onItemClick: () => {
-    alert('Article Card Linked');
-  },
-};
-
 export default ArticleCardList;

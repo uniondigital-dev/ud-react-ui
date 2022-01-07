@@ -3,9 +3,6 @@ import "react";
 import $3Phvp$proptypes from "prop-types";
 import $3Phvp$classnames from "classnames";
 
-function $parcel$export(e, n, v, s) {
-  Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
-}
 
 
 
@@ -618,7 +615,7 @@ var $90cd42957002a5f0$export$2e2bcd8739ae039 = $90cd42957002a5f0$var$VSpace;
 
 function $5bda6e165d715659$var$ArticleCard({ articleTitle: articleTitle , articleContent: articleContent , onClick: onClick  }) {
     return(/*#__PURE__*/ $3Phvp$jsx("div", {
-        className: "ud-w-40 ud-shadow-md",
+        className: "ud-relative ud-bg-violet-200 hover:ud-bg-violet-300 ud-w-40 ud-shadow-md ud-rounded-lg",
         onClick: onClick,
         __source: {
             fileName: "src/components/ArticleCard.js",
@@ -627,10 +624,10 @@ function $5bda6e165d715659$var$ArticleCard({ articleTitle: articleTitle , articl
         },
         __self: this,
         children: /*#__PURE__*/ $3Phvp$jsxs("div", {
-            className: "ud-bg-violet-200 hover:ud-bg-violet-300 ud-py-6 ud-px-4 ud-rounded-lg",
+            className: "ud-py-6 ud-px-4 ",
             __source: {
                 fileName: "src/components/ArticleCard.js",
-                lineNumber: 9,
+                lineNumber: 12,
                 columnNumber: 7
             },
             __self: this,
@@ -638,23 +635,24 @@ function $5bda6e165d715659$var$ArticleCard({ articleTitle: articleTitle , articl
                 /*#__PURE__*/ $3Phvp$jsx($bd07cc75cb7daa6b$export$2e2bcd8739ae039, {
                     __source: {
                         fileName: "src/components/ArticleCard.js",
-                        lineNumber: 10,
+                        lineNumber: 13,
                         columnNumber: 9
                     },
                     __self: this,
                     children: articleTitle
                 }),
                 /*#__PURE__*/ $3Phvp$jsx("div", {
+                    className: "ud-sticky ud-z-10 ud-left-4 ud-bottom-4",
                     __source: {
                         fileName: "src/components/ArticleCard.js",
-                        lineNumber: 11,
+                        lineNumber: 14,
                         columnNumber: 9
                     },
                     __self: this,
                     children: /*#__PURE__*/ $3Phvp$jsxs("p", {
                         __source: {
                             fileName: "src/components/ArticleCard.js",
-                            lineNumber: 12,
+                            lineNumber: 15,
                             columnNumber: 11
                         },
                         __self: this,
@@ -663,29 +661,57 @@ function $5bda6e165d715659$var$ArticleCard({ articleTitle: articleTitle , articl
                             articleContent
                         ]
                     })
+                }),
+                /*#__PURE__*/ $3Phvp$jsx("div", {
+                    className: "ud-absolute ud-right-0 ud-bottom-0 ud-z-0",
+                    __source: {
+                        fileName: "src/components/ArticleCard.js",
+                        lineNumber: 17,
+                        columnNumber: 9
+                    },
+                    __self: this,
+                    children: /*#__PURE__*/ $3Phvp$jsx("svg", {
+                        width: "85",
+                        height: "84",
+                        viewBox: "0 0 85 84",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        __source: {
+                            fileName: "src/components/ArticleCard.js",
+                            lineNumber: 18,
+                            columnNumber: 11
+                        },
+                        __self: this,
+                        children: /*#__PURE__*/ $3Phvp$jsx("path", {
+                            "fill-rule": "evenodd",
+                            "clip-rule": "evenodd",
+                            d: "M82.5 165C128.063 165 165 128.063 165 82.5C165 36.9365 128.063 0 82.5 0C36.9365 0 0 36.9365 0 82.5C0 128.063 36.9365 165 82.5 165ZM82.76 120.665C103.695 120.665 120.665 103.694 120.665 82.7598C120.665 61.8252 103.695 44.8544 82.76 44.8544C61.8254 44.8544 44.8546 61.8252 44.8546 82.7598C44.8546 103.694 61.8254 120.665 82.76 120.665Z",
+                            fill: "#c4b5fd",
+                            __source: {
+                                fileName: "src/components/ArticleCard.js",
+                                lineNumber: 25,
+                                columnNumber: 13
+                            },
+                            __self: this
+                        })
+                    })
                 })
             ]
         })
     }));
 }
-$5bda6e165d715659$var$ArticleCard.PropTypes = {
+$5bda6e165d715659$var$ArticleCard.propTypes = {
     articleTitle: $3Phvp$proptypes.string.isRequired,
     articleContent: $3Phvp$proptypes.string.isRequired,
     onClick: $3Phvp$proptypes.func
 };
 $5bda6e165d715659$var$ArticleCard.defaultProps = {
-    articleTitle: 'Article',
-    articleContent: 'Some details about the content',
-    onClick: ()=>{
-        console.log('Article Card Clicked');
-    }
+    articleTitle: 'Sample Article Title',
+    articleContent: 'Sample Article Content Updated'
 };
 var $5bda6e165d715659$export$2e2bcd8739ae039 = $5bda6e165d715659$var$ArticleCard;
 
 
-var $d10753b9ef4a9524$exports = {};
-
-$parcel$export($d10753b9ef4a9524$exports, "default", () => $d10753b9ef4a9524$export$2e2bcd8739ae039, (v) => $d10753b9ef4a9524$export$2e2bcd8739ae039 = v);
 
 
 
@@ -702,7 +728,6 @@ function $d10753b9ef4a9524$var$ArticleCardList({ title: title , items: items , o
         __self: this,
         children: [
             /*#__PURE__*/ $3Phvp$jsx("div", {
-                className: "ud-flex ud-items-center ud-justify-between",
                 __source: {
                     fileName: "src/components/ArticleCardList.js",
                     lineNumber: 9,
@@ -752,58 +777,10 @@ function $d10753b9ef4a9524$var$ArticleCardList({ title: title , items: items , o
         ]
     }));
 }
-$d10753b9ef4a9524$var$ArticleCardList.PropTypes = {
+$d10753b9ef4a9524$var$ArticleCardList.propTypes = {
     title: $3Phvp$proptypes.string,
     items: $3Phvp$proptypes.array,
     onItemClick: $3Phvp$proptypes.func
-};
-$d10753b9ef4a9524$var$ArticleCardList.defaultProps = {
-    title: 'Title Here',
-    items: [
-        /*#__PURE__*/ $3Phvp$jsx($5bda6e165d715659$export$2e2bcd8739ae039, {
-            __source: {
-                fileName: "src/components/ArticleCardList.js",
-                lineNumber: 36,
-                columnNumber: 5
-            },
-            __self: undefined
-        }),
-        /*#__PURE__*/ $3Phvp$jsx($5bda6e165d715659$export$2e2bcd8739ae039, {
-            __source: {
-                fileName: "src/components/ArticleCardList.js",
-                lineNumber: 37,
-                columnNumber: 5
-            },
-            __self: undefined
-        }),
-        /*#__PURE__*/ $3Phvp$jsx($5bda6e165d715659$export$2e2bcd8739ae039, {
-            __source: {
-                fileName: "src/components/ArticleCardList.js",
-                lineNumber: 38,
-                columnNumber: 5
-            },
-            __self: undefined
-        }),
-        /*#__PURE__*/ $3Phvp$jsx($5bda6e165d715659$export$2e2bcd8739ae039, {
-            __source: {
-                fileName: "src/components/ArticleCardList.js",
-                lineNumber: 39,
-                columnNumber: 5
-            },
-            __self: undefined
-        }),
-        /*#__PURE__*/ $3Phvp$jsx($5bda6e165d715659$export$2e2bcd8739ae039, {
-            __source: {
-                fileName: "src/components/ArticleCardList.js",
-                lineNumber: 40,
-                columnNumber: 5
-            },
-            __self: undefined
-        }), 
-    ],
-    onItemClick: ()=>{
-        alert('Article Card Clicked');
-    }
 };
 var $d10753b9ef4a9524$export$2e2bcd8739ae039 = $d10753b9ef4a9524$var$ArticleCardList;
 
