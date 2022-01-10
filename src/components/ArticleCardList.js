@@ -18,8 +18,8 @@ function ArticleCardList({ title, items, onItemClick, hasPadding }) {
         {items.map((item, index) => (
           <div key={index}>
             <ArticleCard
-              articleTitle={item.articleTitle}
-              articleContent={item.articleContent}
+              title={item.title}
+              content={item.content}
               onClick={() => onItemClick(item)}
             />
           </div>
