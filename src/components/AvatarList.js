@@ -7,7 +7,7 @@ function AvatarList({ users, label, onClick }) {
     <div className="ud-flex ud-space-x-2 ud-items-center" onClick={onClick}>
       <div className="ud-flex ud--space-x-2">
         {users.slice(0, 3).map((user, index) => (
-          <Avatar key={index} avatarUrl={user.avatarUrl} hasBorder />
+          <Avatar key={index} src={user.avatarUrl} hasBorder />
         ))}
       </div>
       <p className="ud-text-sm">{label}</p>
