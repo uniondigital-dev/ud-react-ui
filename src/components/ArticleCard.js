@@ -42,8 +42,8 @@ ArticleCard.propTypes = {
 };
 
 ArticleCard.defaultProps = {
-  title: 'Sample Article Title',
-  content: 'Sample Article Content Updated',
+  title: 'Article Title',
+  content: 'Article Content',
 };
 
 export default ArticleCard;
