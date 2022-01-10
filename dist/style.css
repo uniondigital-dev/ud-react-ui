@@ -468,14 +468,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.ud-static{
-  position: static;
-}
-
-.ud-fixed{
-  position: fixed;
-}
-
 .ud-absolute{
   position: absolute;
 }
@@ -489,6 +481,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: sticky;
 }
 
+.ud-left-4{
+  left: 1rem;
+}
+
+.ud-bottom-4{
+  bottom: 1rem;
+}
+
+.ud-right-0{
+  right: 0px;
+}
+
+.ud-bottom-0{
+  bottom: 0px;
+}
+
 .ud-right-2{
   right: 0.5rem;
 }
@@ -497,80 +505,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0.5rem;
 }
 
-.ud-right-0{
-  right: 0px;
-}
-
-.ud-bottom-9{
-  bottom: 2.25rem;
-}
-
-.ud-bottom-5{
-  bottom: 1.25rem;
-}
-
-.ud-bottom-2{
-  bottom: 0.5rem;
-}
-
-.ud-bottom-4{
-  bottom: 1rem;
-}
-
-.ud-bottom-3{
-  bottom: 0.75rem;
-}
-
-.ud-bottom-1{
-  bottom: 0.25rem;
-}
-
-.ud-bottom-0{
-  bottom: 0px;
-}
-
-.ud-top-5{
-  top: 1.25rem;
-}
-
-.ud-bottom-10{
-  bottom: 2.5rem;
-}
-
-.ud-left-0{
-  left: 0px;
-}
-
-.ud-left-4{
-  left: 1rem;
-}
-
-.ud-bottom-8{
-  bottom: 2rem;
+.ud-z-10{
+  z-index: 10;
 }
 
 .ud-z-0{
   z-index: 0;
-}
-
-.ud--z-50{
-  z-index: -50;
-}
-
-.ud--z-10{
-  z-index: -10;
-}
-
-.ud-z-50{
-  z-index: 50;
-}
-
-.ud-z-40{
-  z-index: 40;
-}
-
-.ud-z-10{
-  z-index: 10;
 }
 
 .ud-mx-auto{
@@ -616,16 +556,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ud-h-40{
   height: 10rem;
-}
-
-.ud-h-fit{
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.ud-h-20{
-  height: 5rem;
 }
 
 .ud-w-40{
@@ -762,11 +692,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ud-bg-primary\/20{
   background-color: rgb(116 67 228 / 0.2);
-}
-
-.ud-bg-violet-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 233 254 / var(--tw-bg-opacity));
 }
 
 .ud-object-cover{
@@ -965,16 +890,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:ud-bg-warning:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 219 97 / var(--tw-bg-opacity));
-}
-
-.hover\:ud-bg-violet-100:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 233 254 / var(--tw-bg-opacity));
-}
-
-.hover\:ud-bg-violet-200:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(221 214 254 / var(--tw-bg-opacity));
 }
 
 .hover\:ud-text-primary-dark:hover{
