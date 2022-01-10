@@ -17,7 +17,7 @@ function ContentCard({ avatarUrl, coverUrl, title, shortDesc, onClick }) {
           <div className="ud-w-64 ud-h-40 ud-bg-primary/20"></div>
         )}
         <div className="ud-absolute ud-right-2 ud-top-2">
-          <Avatar avatarUrl={avatarUrl} />
+          <Avatar src={avatarUrl} />
         </div>
       </div>
       <div className="ud-flex ud-flex-col ud-space-y-1 ud-px-4 ud-py-3">
