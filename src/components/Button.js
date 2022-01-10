@@ -12,9 +12,10 @@ const BUTTON_SIZE = {
 
 const BUTTON_VARIANT = {
   primary: 'ud-bg-primary ud-text-white hover:ud-bg-primary-dark',
-  danger: 'ud-bg-red-100 ud-text-red-800 hover:ud-bg-red-200',
-  warning: 'ud-bg-yellow-100 ud-text-yellow-800 hover:ud-bg-yellow-200',
-  success: 'ud-bg-green-100 ud-text-green-800 hover:ud-bg-green-200',
+  info: 'ud-bg-info ud-text-white hover:ud-bg-info-dark',
+  danger: 'ud-bg-danger ud-text-white hover:ud-bg-danger-dark',
+  warning: 'ud-bg-warning ud-text-black hover:ud-bg-warning-dark',
+  success: 'ud-bg-success ud-text-white hover:ud-bg-success-dark',
   link: 'ud-text-primary ud-underline ud-bg-transparent hover:ud-text-primary-dark !ud-p-0',
 };
 
@@ -52,7 +53,14 @@ Button.variant = BUTTON_VARIANT;
 Button.size = BUTTON_SIZE;
 
 Button.propTypes = {
-  variant: PropTypes.oneOf(['primary', 'danger', 'warning', 'success', 'link']),
+  variant: PropTypes.oneOf([
+    'primary',
+    'info',
+    'danger',
+    'warning',
+    'success',
+    'link',
+  ]),
   size: PropTypes.oneOf(['xs', 'sm', 'base', 'large', 'extraLarge']),
   children: PropTypes.node,
   className: PropTypes.string,
