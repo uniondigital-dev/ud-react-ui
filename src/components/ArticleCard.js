@@ -41,9 +41,4 @@ ArticleCard.propTypes = {
   onClick: PropTypes.func,
 };
 
-ArticleCard.defaultProps = {
-  title: 'Sample Article Title',
-  content: 'Sample Article Content Updated',
-};
-
 export default ArticleCard;
