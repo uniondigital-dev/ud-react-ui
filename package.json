@@ -10,7 +10,8 @@
     "watch:js": "parcel watch --no-hmr --no-source-maps",
     "watch:css": "npx tailwindcss -i ./src/index.css -o ./dist/style.css --watch",
     "dev": "concurrently \"npm run watch:css\" \"npm run watch:js\"",
-    "build": "concurrently \"parcel build --no-source-maps\" \"npx tailwindcss -i ./src/index.css -o ./dist/style.css --minify\""
+    "build": "concurrently \"parcel build --no-source-maps\" \"npx tailwindcss -i ./src/index.css -o ./dist/style.css --minify\"",
+    "prepare": "npm run build"
   },
   "keywords": [],
   "author": "",

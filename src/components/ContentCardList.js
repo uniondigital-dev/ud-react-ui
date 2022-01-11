@@ -10,9 +10,9 @@ function ContentCardList({
   title,
   items,
   onItemClick,
-  ctaText,
+  ctaText = 'View all',
   onCtaClick,
-  hasPadding,
+  hasPadding = false,
 }) {
   return (
     <div
@@ -21,7 +21,9 @@ function ContentCardList({
       })}
     >
       <div className="ud-flex ud-items-center ud-justify-between">
-        <Title>{title}</Title>
+        <div>
+          <Title>{title}</Title>
+        </div>
         <Button
           variant="link"
           className={classNames({
