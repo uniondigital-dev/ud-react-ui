@@ -30,8 +30,8 @@ function ArticleCardList({ title, items, onItemClick, hasPadding }) {
 }
 
 ArticleCardList.propTypes = {
-  title: PropTypes.string,
-  items: PropTypes.array,
+  title: PropTypes.string.isRequired,
+  items: PropTypes.array.isRequired,
   onItemClick: PropTypes.func,
   hasPadding: PropTypes.bool,
 };
