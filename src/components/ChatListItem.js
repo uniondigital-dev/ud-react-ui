@@ -15,8 +15,8 @@ function ChatListItem({
 }) {
   return (
     <div
-      className={classNames('ud-flex ud-justify-between mb-2', {
-        'ud-mb-3': hasDivider,
+      className={classNames('ud-flex ud-justify-between hover:ud-bg-gray-100', {
+        'ud-mb-2': hasDivider,
       })}
       onClick={onClick}
     >
@@ -46,7 +46,7 @@ function ChatListItem({
       >
         <p className="ud-text-[10px] ud-text-gray">{dateTimeText}</p>
         {badgeText ? (
-          <div className="ud-mt-0 ud-justify-self-end ud-mb-2">
+          <div className="ud-mt-0 ud-justify-self-end">
             <Badge variant="info" size="xs">
               {badgeText}
             </Badge>
