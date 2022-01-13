@@ -12,3 +12,4 @@ export { default as Subtitle } from './components/Subtitle';
 export { default as VSpace } from './components/VSpace';
 export { default as ArticleCard } from './components/ArticleCard';
 export { default as ArticleCardList } from './components/ArticleCardList';
+export { default as NewsFeedHeader } from './components/NewsFeedHeader';
