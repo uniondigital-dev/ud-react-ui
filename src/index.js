@@ -8,6 +8,7 @@ export { default as Input } from './components/Input';
 export { default as ChatListItem } from './components/ChatListItem';
 export { default as ContentCardList } from './components/ContentCardList';
 export { default as LoanCard } from './components/LoanCard';
+export { default as NewsFeedMarketPlaceCard } from './components/NewsFeedMarketPlaceCard';
 export { default as Title } from './components/Title';
 export { default as Subtitle } from './components/Subtitle';
 export { default as VSpace } from './components/VSpace';
