@@ -7,6 +7,7 @@ export { default as Button } from './components/Button';
 export { default as Container } from './components/Container';
 export { default as ContentCard } from './components/ContentCard';
 export { default as ContentCardList } from './components/ContentCardList';
+export { default as ChatListItem } from './components/ChatListItem';
 export { default as GridImage } from './components/GridImage';
 export { default as Input } from './components/Input';
 export { default as LoanCard } from './components/LoanCard';
