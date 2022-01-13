@@ -17,6 +17,8 @@ const BUTTON_VARIANT = {
   warning: 'ud-bg-warning ud-text-black hover:ud-bg-warning-dark',
   success: 'ud-bg-success ud-text-white hover:ud-bg-success-dark',
   link: 'ud-text-primary ud-underline ud-bg-transparent hover:ud-text-primary-dark !ud-p-0',
+  'primary-light':
+    'ud-text-primary ud-bg-primary-lighter hover:ud-bg-primary hover:ud-text-white',
 };
 
 function Button({
@@ -60,6 +62,7 @@ Button.propTypes = {
     'warning',
     'success',
     'link',
+    'primary-light',
   ]),
   size: PropTypes.oneOf(['xs', 'sm', 'base', 'large', 'extraLarge']),
   children: PropTypes.node,
