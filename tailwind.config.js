@@ -13,6 +13,7 @@ module.exports = {
         primary: {
           DEFAULT: '#7443E4',
           light: '#8E67E9',
+          lighter: '#E6DFF7',
           dark: '#40009B',
         },
         warning: {

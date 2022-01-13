@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const SIZE = {
-  xs: 'ud-text-[10px] ud-px-2.5 ud-py-0.5',
+  xs: 'ud-text-[10px] ud-px-1 ud-py-0.5',
   sm: 'ud-text-xs ud-px-2.5 ud-py-0.5 ',
 };
 
