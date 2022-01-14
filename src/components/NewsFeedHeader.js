@@ -4,12 +4,10 @@ import PropTypes from 'prop-types';
 function NewsFeedHeader({ title, subtitle, shared, avatarUrl, suffixIcon }) {
   return (
     <div className="ud-flex ud-rounded-lg">
-      <div className="ud-flex ud-w-90 ud-flex-auto">
-        <div className="ud-m-4">
-          <Avatar src={avatarUrl} />
-        </div>
-        <div className="ud-my-4">
-          <p className="ud-text-base ud-font-medium">
+      <div className="ud-flex ud-items-center ud-flex-auto ud-space-x-4">
+        <Avatar src={avatarUrl} />
+        <div>
+          <div className="ud-text-base ud-font-medium">
             {shared === undefined ? (
               title
             ) : (
@@ -18,7 +16,7 @@ function NewsFeedHeader({ title, subtitle, shared, avatarUrl, suffixIcon }) {
                 {shared}
               </div>
             )}
-          </p>
+          </div>
           <p className="ud-text-sm ud-text-slate-500 ud--mt-1 ">{subtitle}</p>
         </div>
       </div>

@@ -2,15 +2,30 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ProgressBar from './ProgressBar';
+import NewsFeedHeader from './NewsFeedHeader';
 
-function NewsFeedPollCard({ title, shared, body, answers }) {
+function NewsFeedPollCard({
+  title,
+  subtitle,
+  shared,
+  avatarUrl,
+  body,
+  answers,
+}) {
   return (
     <div className="ud-flex ud-flex-col ud-px-5 ud-py-7 ud-bg-white ud-rounded-lg ud-shadow-md">
-      {/* <NewsFeedHeader title="RAFI Poll" subtitle="Poll-so ng Masa" */}
+      <NewsFeedHeader
+        title={title}
+        subtitle={subtitle}
+        shared={shared}
+        avatarUrl={avatarUrl}
+      />
       <div>
-        <p className="ud-text-black ud-font-semibold ud-text-base">{body}</p>
+        <p className="ud-text-black ud-font-semibold ud-text-base ud-mt-4">
+          {body}
+        </p>
       </div>
-      <div className="ud-flex ud-flex-col ud-mt-6 ud-space-y-3">
+      <div className="ud-flex ud-flex-col ud-mt-4 ud-space-y-3">
         {answers.map(({ variant, label, percentage }, index) => (
           <ProgressBar
             key={index}
@@ -29,6 +44,7 @@ NewsFeedPollCard.propTypes = {
   shared: PropTypes.string,
   body: PropTypes.string.isRequired,
   answers: PropTypes.array.isRequired,
+  avatarUrl: PropTypes.string.isRequired,
 };
 
 export default NewsFeedPollCard;
