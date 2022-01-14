@@ -1,11 +1,10 @@
 import React from 'react';
 import Avatar from './Avatar';
 import PropTypes from 'prop-types';
-import { FaHeart } from 'react-icons/fa';
 
 function NewsFeedHeader({ title, subtitle, src, suffixIcon }) {
   return (
-    <div className="ud-flex ud-shadow-md ud-rounded-lg">
+    <div className="ud-flex ud-rounded-lg">
       <div className="ud-flex ud-w-90 ud-flex-auto">
         <div className="ud-m-4">
           <Avatar src={src} />
