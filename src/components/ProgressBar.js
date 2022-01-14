@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 const VARIANT = {
   success: 'ud-bg-[#CDF8C2]',
@@ -28,5 +29,12 @@ function ProgressBar({
     </div>
   );
 }
+
+ProgressBar.propTypes = {
+  variant: PropTypes.oneOf(['danger', 'success']),
+  customColor: PropTypes.string,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.string.isRequired,
+};
 
 export default ProgressBar;
