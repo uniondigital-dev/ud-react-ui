@@ -5,11 +5,11 @@ function NewsFeedHeader({ title, subtitle, shared, avatarUrl, suffixIcon }) {
   return (
     <div className="ud-flex ud-rounded-lg">
       <div className="ud-flex ud-w-90 ud-flex-auto">
-        <div className="ud-m-4">
+        <div className="ud-mr-4">
           <Avatar src={avatarUrl} />
         </div>
-        <div className="ud-my-4">
-          <p className="ud-text-base ud-font-medium">
+        <div className="">
+          <div className="ud-text-base ud-font-medium">
             {shared === undefined ? (
               title
             ) : (
@@ -18,11 +18,11 @@ function NewsFeedHeader({ title, subtitle, shared, avatarUrl, suffixIcon }) {
                 {shared}
               </div>
             )}
-          </p>
+          </div>
           <p className="ud-text-sm ud-text-slate-500 ud--mt-1 ">{subtitle}</p>
         </div>
       </div>
-      <div className="ud-flex ud-flex-auto ud-w-10 ud-justify-end ud-items-center ud-m-4">
+      <div className="ud-flex ud-flex-auto ud-w-10 ud-justify-end ud-items-center ud-mx-4">
         <div>{suffixIcon}</div>
       </div>
     </div>
