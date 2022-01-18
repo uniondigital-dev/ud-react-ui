@@ -7,7 +7,7 @@ import NewsFeedHeader from './NewsFeedHeader';
 function NewsFeedPollCard({
   title,
   subtitle,
-  shared,
+  shared = false,
   avatarUrl,
   body,
   answers,
@@ -17,7 +17,7 @@ function NewsFeedPollCard({
       <NewsFeedHeader
         title={title}
         subtitle={subtitle}
-        shared={shared}
+        shared={shared ? 'poll' : undefined}
         avatarUrl={avatarUrl}
       />
       <div>
@@ -41,7 +41,7 @@ function NewsFeedPollCard({
 
 NewsFeedPollCard.propTypes = {
   title: PropTypes.string.isRequired,
-  shared: PropTypes.string,
+  shared: PropTypes.bool,
   body: PropTypes.string.isRequired,
   answers: PropTypes.array.isRequired,
   avatarUrl: PropTypes.string.isRequired,
