@@ -1,6 +1,4 @@
 import React from 'react';
-import AvatarList from './AvatarList';
-import Subtitle from './Subtitle';
 import PropTypes from 'prop-types';
 
 function NewsFeedFooter({ prefix, suffix }) {
