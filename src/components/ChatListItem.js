@@ -6,6 +6,7 @@ import Avatar from './Avatar';
 import Badge from './Badge';
 
 function ChatListItem({
+  avatarUrl,
   title,
   body,
   dateTimeText,
@@ -21,7 +22,7 @@ function ChatListItem({
       onClick={onClick}
     >
       <div className="ud-flex ud-flex-1 ud-space-x-2 ud-overflow-hidden">
-        <Avatar src="https://randomuser.me/api/portraits/men/1.jpg" />
+        <Avatar src={avatarUrl} />
         <div
           className={classNames(
             'ud-flex ud-flex-1 ud-flex-col ud-justify-center',
@@ -60,6 +61,7 @@ function ChatListItem({
 }
 
 ChatListItem.propTypes = {
+  avatarUrl: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,
   dateTimeText: PropTypes.string.isRequired,
