@@ -6,10 +6,10 @@ import PropTypes from 'prop-types';
 function NewsFeedFooter({ prefix, suffix }) {
   return (
     <div className="ud-flex">
-      <div className="ud-flex ud-w-90">
+      <div className="ud-flex ud-flex-1">
         <div className="">{prefix}</div>
       </div>
-      <div className="ud-flex ud-flex-auto ud-w-10 ud-justify-end ud-items-center">
+      <div className="ud-flex ud-flex-1 ud-justify-end ud-items-center">
         <div>{suffix}</div>
       </div>
     </div>
