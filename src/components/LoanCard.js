@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import Avatar from './Avatar';
 import Button from './Button';
 
-function LoanCard({ firstName, avatarUrl, amount, paymentDate, onPay }) {
+function LoanCard({ name, avatarUrl, amount, paymentDate, onPay }) {
   return (
     <div className="ud-bg-warning ud-px-4 ud-py-6 ud-rounded-lg ud-shadow-sm">
       <div className="ud-flex ud-justify-between ud-items-center ud-w-full">
         <p className="ud-text-primary ud-text-base ud-capitalize">
-          {firstName} Personal loan
+          {name} Personal loan
         </p>
         <Avatar src={avatarUrl} />
       </div>
@@ -32,7 +32,7 @@ function LoanCard({ firstName, avatarUrl, amount, paymentDate, onPay }) {
 }
 
 LoanCard.propTypes = {
-  firstName: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   avatarUrl: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   paymentDate: PropTypes.string.isRequired,

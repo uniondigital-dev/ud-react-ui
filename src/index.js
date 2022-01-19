@@ -4,6 +4,7 @@ export { default as Avatar } from './components/Avatar';
 export { default as AvatarList } from './components/AvatarList';
 export { default as Badge } from './components/Badge';
 export { default as Button } from './components/Button';
+export { default as ChatContainer } from './components/ChatContainer';
 export { default as Container } from './components/Container';
 export { default as ContentCard } from './components/ContentCard';
 export { default as ContentCardList } from './components/ContentCardList';
