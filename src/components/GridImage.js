@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function GridImage({ imageUrl, title, onClick }) {
     return (
       <div
-        className="ud-flex ud-flex-col ud-rounded-lg ud-w-44 ud-bg-transparent hover:ud-bg-purple-300 ud-cursor-pointer ud-overflow-hidden"
+        className="ud-flex ud-flex-col ud-w-32 md:ud-w-36 lg:ud-w-44 ud-rounded-lg ud-bg-transparent hover:ud-bg-purple-300 ud-cursor-pointer ud-overflow-hidden"
         onClick={onClick}>
         <img className="ud-aspect-square ud-w-full ud-rounded-lg" src={imageUrl} alt="image cover" />
         <h4 className="ud-px-1 ud-py-1 ud-text-black ud-font-semibold ud-truncate ud-text-left">
