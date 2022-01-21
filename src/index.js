@@ -12,7 +12,6 @@ export { default as ChatListItem } from './components/ChatListItem';
 export { default as GridImage } from './components/GridImage';
 export { default as Input } from './components/Input';
 export { default as LoanCard } from './components/LoanCard';
-export { default as NewsFeedEventCard } from './components/NewsFeedEventCard';
 export { default as NewsFeedFooter } from './components/NewsFeedFooter';
 export { default as NewsFeedFundraisingCard } from './components/NewsFeedFundraisingCard';
 export { default as NewsFeedHeader } from './components/NewsFeedHeader';
