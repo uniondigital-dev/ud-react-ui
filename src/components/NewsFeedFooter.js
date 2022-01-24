@@ -14,7 +14,7 @@ function NewsFeedFooter({ prefix, suffix }) {
   );
 }
 
-NewsFeedFooter.PropTypes = {
+NewsFeedFooter.propTypes = {
   prefix: PropTypes.node.isRequired,
   suffix: PropTypes.node,
 };
