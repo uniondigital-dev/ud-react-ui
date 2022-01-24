@@ -22,7 +22,7 @@ function NewsFeedHeader({ title, subtitle, shared, avatarUrl, suffixIcon }) {
           <p className="ud-text-sm ud-text-slate-500 ud--mt-1 ">{subtitle}</p>
         </div>
       </div>
-      <div className="ud-flex ud-flex-auto ud-w-10 ud-justify-end ud-items-center ud-mx-4">
+      <div className="ud-flex ud-flex-auto ud-w-10 ud-justify-end ud-items-center">
         <div>{suffixIcon}</div>
       </div>
     </div>
