@@ -16,7 +16,6 @@ function NewsFeedFundraisingCard({
   onDonateClick,
 }) {
   var [isLike, setIsLike] = useState(isLike);
-  console.log(isLike);
   return (
     <div className="ud-flex ud-flex-col ud-rounded-lg ud-shadow-md">
       <div className="ud-px-5 ud-py-5">
@@ -43,7 +42,7 @@ function NewsFeedFundraisingCard({
         />
       </div>
       <img className="ud-aspect-video ud-object-cover" src={image} />
-      <p className="ud-px-8 ud-py-7 ud-font-medium">{content}</p>
+      <p className="ud-text-black ud-px-8 ud-py-7 ud-font-medium">{content}</p>
       <div className="ud-pb-7 ud-px-5 ">
         <NewsFeedFooter
           prefix={
