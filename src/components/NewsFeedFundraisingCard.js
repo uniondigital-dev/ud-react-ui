@@ -14,6 +14,8 @@ function NewsFeedFundraisingCard({
   likeCount,
   onDonateClick,
 }) {
+  var [isLike, setIsLike] = useState(false);
+  console.log(isLike);
   return (
     <div className="ud-flex ud-flex-col ud-rounded-lg ud-shadow-md">
       <div className="ud-px-5 ud-py-5">
@@ -22,7 +24,21 @@ function NewsFeedFundraisingCard({
           subtitle={subtitle}
           shared={shared ? 'fundraising' : undefined}
           avatarUrl={avatarUrl}
-          suffixIcon={<HeartIcon className="ud-h-5 ud-w-5 ud-text-red-500" />}
+          suffixIcon={
+            <div
+              onClick={() =>
+                setIsLike(isLike ? (isLike = false) : (isLike = true))
+              }
+            >
+              <HeartIcon
+                className={
+                  isLike
+                    ? 'ud-h-5 ud-w-5 ud-text-red-500'
+                    : 'ud-h-5 ud-w-5 ud-text-gray-500'
+                }
+              />
+            </div>
+          }
         />
       </div>
       <img className="ud-aspect-video ud-object-cover" src={image} />
