@@ -7,7 +7,7 @@ const SPACE_SIZE = {
   sm: 'ud-mt-2',
   base: 'ud-mt-3',
   large: 'ud-mt-4',
-  extraLarge: 'ud-mt-5',
+  extraLarge: 'ud-mt-8',
 };
 
 function VSpace({ size = 'extraLarge' }) {

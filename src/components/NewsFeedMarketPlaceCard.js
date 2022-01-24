@@ -15,7 +15,7 @@ function NewsFeedMarketPlaceCard({
   onSell,
 }) {
   return (
-    <div className="ud-bg-white ud-rounded-lg">
+    <div className="ud-bg-white ud-rounded-lg ud-shadow-md ud-px-5 ud-py-7">
       <div className="ud-flex ud-items-center ud-space-x-3">
         <Avatar src={avatarUrl} />
         <div className="ud-flex-1">
