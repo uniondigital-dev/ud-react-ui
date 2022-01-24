@@ -10,6 +10,7 @@ export { default as ContentCard } from './components/ContentCard';
 export { default as ContentCardList } from './components/ContentCardList';
 export { default as ChatListItem } from './components/ChatListItem';
 export { default as GridImage } from './components/GridImage';
+export { default as GridImageList } from './components/GridImageList';
 export { default as Input } from './components/Input';
 export { default as LoanCard } from './components/LoanCard';
 export { default as NewsFeedEventCard } from './components/NewsFeedEventCard';
