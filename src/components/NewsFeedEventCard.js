@@ -15,8 +15,9 @@ function NewsFeedEventCard({
   subContent,
   userLikes,
   likeCount,
+  isLike,
 }) {
-  var [isLike, setIsLike] = useState(false);
+  var [isLike, setIsLike] = useState(isLike);
   return (
     <div className="ud-flex ud-flex-col ud-bg-white ud-rounded-lg ud-shadow-md">
       <div className="ud-px-5 ud-py-5">
@@ -80,6 +81,7 @@ NewsFeedEventCard.propTypes = {
   dateName: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   subContent: PropTypes.string.isRequired,
+  isLike: PropTypes.bool.isRequired,
 };
 
 export default NewsFeedEventCard;

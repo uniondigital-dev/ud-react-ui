@@ -7,6 +7,7 @@ function NewsFeedFundraisingCard({
   title,
   subtitle,
   shared,
+  isLike,
   avatarUrl,
   image,
   content,
@@ -14,7 +15,7 @@ function NewsFeedFundraisingCard({
   likeCount,
   onDonateClick,
 }) {
-  var [isLike, setIsLike] = useState(false);
+  var [isLike, setIsLike] = useState(isLike);
   console.log(isLike);
   return (
     <div className="ud-flex ud-flex-col ud-rounded-lg ud-shadow-md">
@@ -63,6 +64,7 @@ function NewsFeedFundraisingCard({
 NewsFeedFundraisingCard.propTypes = {
   image: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
+  isLike: PropTypes.bool.isRequired,
   userLikes: PropTypes.array.isRequired,
   likeCount: PropTypes.string.isRequired,
   onDonateClick: PropTypes.func.isRequired,
