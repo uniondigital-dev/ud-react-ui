@@ -13,6 +13,7 @@ export { default as GridImage } from './components/GridImage';
 export { default as GridImageList } from './components/GridImageList';
 export { default as Input } from './components/Input';
 export { default as LoanCard } from './components/LoanCard';
+export { default as NewsFeedCard } from './components/NewsFeedCard';
 export { default as NewsFeedEventCard } from './components/NewsFeedEventCard';
 export { default as NewsFeedFooter } from './components/NewsFeedFooter';
 export { default as NewsFeedFundraisingCard } from './components/NewsFeedFundraisingCard';
