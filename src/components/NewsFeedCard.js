@@ -12,7 +12,7 @@ function NewsFeedCard({
   content,
   userLikes,
   likeCount,
-  commentNum,
+  commentCount,
 }) {
   var [isLike, setIsLike] = useState(isLike);
   return (
@@ -53,9 +53,9 @@ function NewsFeedCard({
           suffix={
             <div className="ud-mt-3">
               <Subtitle>
-                {commentNum === undefined
+                {commentCount === undefined
                   ? '0 comments'
-                  : commentNum + ' comments'}
+                  : commentCount + ' comments'}
               </Subtitle>
             </div>
           }
@@ -70,7 +70,7 @@ NewsFeedCard.propTypes = {
   isLike: PropTypes.bool.isRequired,
   userLikes: PropTypes.array.isRequired,
   likeCount: PropTypes.string.isRequired,
-  commentNum: PropTypes.string.isRequired,
+  commentCount: PropTypes.string.isRequired,
 };
 
 export default NewsFeedCard;
