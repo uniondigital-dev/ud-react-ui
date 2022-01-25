@@ -10,7 +10,6 @@
   "source": "src/index.js",
   "main": "dist/main.js",
   "module": "dist/module.js",
-  "modules": true,
   "scripts": {
     "clean:dist": "rm -rf dist",
     "watch:js": "parcel watch --no-hmr --no-source-maps",
@@ -21,7 +20,7 @@
     "prepare": "npm run build"
   },
   "author": "uniondigital",
-  "license": "GPLv3",
+  "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "parcel": "^2.0.1",
