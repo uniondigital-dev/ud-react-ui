@@ -1,6 +1,6 @@
 # Union Digital's Mini App React Components
 
-# Issues
+## Issues
 
 ### Duplicate react dependency
 

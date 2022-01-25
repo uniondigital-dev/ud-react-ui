@@ -20,6 +20,7 @@ export { default as NewsFeedHeader } from './components/NewsFeedHeader';
 export { default as NewsFeedMarketPlaceCard } from './components/NewsFeedMarketPlaceCard';
 export { default as NewsFeedPollCard } from './components/NewsFeedPollCard';
 export { default as ProgressBar } from './components/ProgressBar';
+export { default as Spinner } from './components/Spinner';
 export { default as Subtitle } from './components/Subtitle';
 export { default as Title } from './components/Title';
 export { default as VSpace } from './components/VSpace';
