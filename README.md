@@ -2,9 +2,9 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://uniondigital.io">
+  <!-- <a href="https://uniondigital.io">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Unionbank_2018_logo.svg/640px-Unionbank_2018_logo.svg.png" alt="Logo" width="500" height="150">
-  </a>
+  </a> -->
 
   <div align="center">
 
@@ -20,7 +20,7 @@
     <img src="https://forthebadge.com/images/badges/made-with-javascript.svg">
   </div>
 
-  <h3 align="center">UD React UI</h3>
+  <h2 align="center">UD React UI</h2>
 
   <p align="center">
     Union Digital's react component UI for mini apps
