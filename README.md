@@ -20,7 +20,7 @@
     <img src="https://forthebadge.com/images/badges/made-with-javascript.svg">
   </div>
 
-  <h2 align="center">UD React UI</h2>
+  <h3 align="center">UD React UI</h3>
 
   <p align="center">
     Union Digital's react component UI for mini apps
