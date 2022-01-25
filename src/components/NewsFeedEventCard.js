@@ -32,10 +32,10 @@ function NewsFeedEventCard({
       <img className="ud-aspect-video ud-object-cover" src={coverImage} />
       <div className="ud-w-20 ud-h-20 ud--mt-12 ud-ml-6 ud-bg-white ud-rounded-xl ud-shadow-xl">
         <div className="ud-flex ud-flex-col ud-items-center ud-justify-center">
-          <h1 className="ud-text-black ud-text-3xl ud-m-3">{dateNum}</h1>
-          <h1 className="ud-text-base ud-font-semibold  ud-text-red-500 ud--m-4">
+          <p className="ud-text-black ud-text-3xl ud-m-3">{dateNum}</p>
+          <p className="ud-text-base ud-font-semibold  ud-text-red-500 ud--m-4">
             {dateName}
-          </h1>
+          </p>
         </div>
       </div>
       <div className="ud-m-6">
