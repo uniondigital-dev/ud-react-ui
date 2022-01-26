@@ -25,10 +25,10 @@
   <p align="center">
     Union Digital's react component UI for mini apps
     <br />
-    <a href="https://uddocs.uniondigital.io"><strong>Explore the docs »</strong></a>
+    <a href="https://uddocs.vercel.app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://uddemo.uniondigital.io">View Demo</a>
+    <a href="https://google.com">View Demo</a>
     ·
     <a href="https://github.com/uniondigital-dev/ud-react-ui/issues">Report Bug</a>
     ·
