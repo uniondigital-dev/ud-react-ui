@@ -28,8 +28,8 @@
     <a href="https://uddocs.vercel.app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://google.com">View Demo</a>
-    ·
+    <!-- <a href="https://google.com">View Demo</a>
+    · -->
     <a href="https://github.com/uniondigital-dev/ud-react-ui/issues">Report Bug</a>
     ·
     <a href="https://github.com/uniondigital-dev/ud-react-ui/issues">Request Feature</a>
